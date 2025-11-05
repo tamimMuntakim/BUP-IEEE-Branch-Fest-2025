@@ -3,15 +3,15 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import hf1 from "../assets/Photos/hf1_resized.jpg";
-import hf2 from "../assets/Photos/hf2_resized.jpg";
+import hf2 from "../assets/Photos/hf2_resized.JPG";
 import hf3 from "../assets/Photos/hf3_resized.jpg";
 import hf4 from "../assets/Photos/hf4_resized.jpg";
 import hf5 from "../assets/Photos/hf5_resized.jpg";
 import hf6 from "../assets/Photos/hf6_resized.jpg";
 import hf7 from "../assets/Photos/hf7_resized.jpg";
 import hf8 from "../assets/Photos/hf8_resized.jpg";
-import hf9 from "../assets/Photos/hf9_resized.jpg";
-import hf10 from "../assets/Photos/hf10_resized.jpg";
+import hf9 from "../assets/Photos/hf9_resized.JPG";
+import hf10 from "../assets/Photos/hf10_resized.JPG";
 
 const images = [hf1, hf2, hf3, hf4, hf5, hf6, hf7, hf8, hf9, hf10];
 const HallOfFame = () => {
