@@ -51,6 +51,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: -40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: true }}
                     className="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-4 bg-clip-text text-transparent bg-linear-to-r/hsl from-cyan-600 to-teal-400 text-center"
                 >
                     IEEE BranchFest 2025
@@ -60,6 +61,7 @@ const Hero = () => {
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     transition={{ delay: 0.3, duration: 1 }}
                     className="sm:text-xl md:text-3xl text-gray-300 mb-12 text-center px-6"
                 >
@@ -70,6 +72,7 @@ const Hero = () => {
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
                     transition={{ delay: 0.6, duration: 1 }}
                     className="flex justify-center"
                 >
@@ -101,10 +104,12 @@ const Hero = () => {
                 <motion.div
                     animate={{ x: [0, 100, 0] }}
                     transition={{ duration: 8, repeat: Infinity }}
+                    viewport={{ once: true }}
                     className="absolute top-1/3 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40"
                 ></motion.div>
                 <motion.div
                     animate={{ x: [0, -100, 0] }}
+                    viewport={{ once: true }}
                     transition={{ duration: 10, repeat: Infinity }}
                     className="absolute bottom-1/3 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"
                 ></motion.div>

@@ -41,6 +41,7 @@ const JobFair = () => {
                 <motion.div
                     initial={{ opacity: 0, x: -40 }}
                     animate={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 1 }}
                     className="relative w-full md:w-1/2"
                 >
@@ -57,6 +58,7 @@ const JobFair = () => {
                     initial={{ opacity: 0, x: 40 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: true }}
                     className="w-full md:w-1/2 space-y-6"
                 >
                     <h2 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">

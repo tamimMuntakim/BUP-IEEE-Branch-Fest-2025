@@ -55,6 +55,7 @@ const PartnerWithUs = () => {
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                     className="text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text"
                 >
@@ -73,6 +74,7 @@ const PartnerWithUs = () => {
                             key={tier.name}
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
                             className={`relative overflow-hidden border border-gray-700 rounded-2xl backdrop-blur-xl bg-gray-900/50 p-8 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_40px_rgba(0,255,255,0.3)] group`}
                         >
@@ -110,6 +112,7 @@ const PartnerWithUs = () => {
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
+                                    viewport={{ once: true }}
                                     className={`mt-8 px-5 py-2 text-sm font-semibold rounded-lg bg-gradient-to-r ${tier.gradient} text-black shadow-md hover:shadow-lg transition-all`}
                                 >
                                     Become a {tier.name} Partner

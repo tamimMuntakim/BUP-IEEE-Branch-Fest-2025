@@ -28,6 +28,7 @@ const About = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
                         className="relative"
+                        viewport={{ once: true }}
                     >
                         <div className="absolute inset-0 rounded-3xl border border-cyan-500/40 blur-md animate-pulse"></div>
                         <img
@@ -43,6 +44,7 @@ const About = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
                         className="space-y-6"
+                        viewport={{ once: true }}
                     >
                         <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-linear-to-r/hsl from-emerald-400 to-sky-600">
                             About IEEE BranchFest 2025
@@ -88,10 +90,12 @@ const About = () => {
                 <motion.div
                     animate={{ x: [0, 100, 0] }}
                     transition={{ duration: 10, repeat: Infinity }}
+                    viewport={{ once: true }}
                     className="absolute top-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40"
                 ></motion.div>
                 <motion.div
                     animate={{ x: [0, -100, 0] }}
+                    viewport={{ once: true }}
                     transition={{ duration: 12, repeat: Infinity }}
                     className="absolute bottom-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"
                 ></motion.div>

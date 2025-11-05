@@ -24,6 +24,7 @@ const HallOfFame = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
                     className="text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text"
                 >
                     Hall of Fame
@@ -37,6 +38,7 @@ const HallOfFame = () => {
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                     className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
                 >

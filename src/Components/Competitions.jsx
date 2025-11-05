@@ -84,6 +84,7 @@ const Competitions = () => {
                 initial={{ opacity: 0, y: -40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
+                viewport={{ once: true }}
                 className="text-center text-4xl md:text-5xl font-extrabold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 relative z-10"
             >
                 Competitions at IEEE BranchFest 2025
@@ -99,11 +100,13 @@ const Competitions = () => {
             {/* Futuristic sweeping lines */}
             <motion.div
                 animate={{ x: [0, 100, 0] }}
+                viewport={{ once: true }}
                 transition={{ duration: 10, repeat: Infinity }}
                 className="absolute top-1/3 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40"
             ></motion.div>
             <motion.div
                 animate={{ x: [0, -100, 0] }}
+                viewport={{ once: true }}
                 transition={{ duration: 12, repeat: Infinity }}
                 className="absolute bottom-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"
             ></motion.div>
