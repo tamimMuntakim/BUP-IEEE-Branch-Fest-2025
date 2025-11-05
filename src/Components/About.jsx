@@ -27,7 +27,7 @@ const About = () => {
                         initial={{ opacity: 0, x: -40 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
-                        className="relative"
+                        className="relative will-change-transform"
                         viewport={{ once: true }}
                     >
                         <div className="absolute inset-0 rounded-3xl border border-cyan-500/40 blur-md animate-pulse"></div>
@@ -35,6 +35,9 @@ const About = () => {
                             src={Banner_img}
                             alt="IEEE BranchFest 2025"
                             className="rounded-3xl w-full shadow-[0_0_25px_rgba(0,255,255,0.3)] object-cover"
+                            loading="lazy" // <--- ADD THIS
+                            width="800" // <--- Set explicit dimensions (improves layout shift)
+                            height="500" // <--- Set explicit dimensions
                         />
                     </motion.div>
 
@@ -87,18 +90,12 @@ const About = () => {
                 </div>
 
                 {/* Animated horizontal lines for futuristic effect */}
-                <motion.div
-                    animate={{ x: [0, 100, 0] }}
-                    transition={{ duration: 10, repeat: Infinity }}
-                    viewport={{ once: true }}
-                    className="absolute top-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40"
-                ></motion.div>
-                <motion.div
-                    animate={{ x: [0, -100, 0] }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 12, repeat: Infinity }}
-                    className="absolute bottom-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"
-                ></motion.div>
+                <div
+                    className="absolute top-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40 animate-slow-slide-right" // You'd define animate-slow-slide-right in your CSS
+                ></div>
+                <div
+                    className="absolute top-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40 animate-slow-slide-right" // You'd define animate-slow-slide-right in your CSS
+                ></div>
             </div>
         </section>
     );
