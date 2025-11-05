@@ -1,7 +1,7 @@
 import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import Banner_img from "../assets/Photos/banner_resized.jpg"
+import Banner_img from "../assets/Photos/banner_resized.jpg";
 
 const About = () => {
     const stats = [
@@ -14,86 +14,88 @@ const About = () => {
     return (
         <section className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden">
             {/* Background tech grid */}
-            <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.08),transparent_70%)]"></div>
-                <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
-                <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
-            </div>
+            <div className="w-11/12 md:container mx-auto">
+                <div className="absolute inset-0">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.08),transparent_70%)]"></div>
+                    <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
+                    <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
+                </div>
 
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6 relative z-10">
-                {/* Left Side — Image */}
+                <div className="flex flex-col xl:flex-row items-center gap-8 relative z-10 justify-center">
+                    {/* Left Side — Image */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -40 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 }}
+                        className="relative"
+                    >
+                        <div className="absolute inset-0 rounded-3xl border border-cyan-500/40 blur-md animate-pulse"></div>
+                        <img
+                            src={Banner_img}
+                            alt="IEEE BranchFest 2025"
+                            className="rounded-3xl w-full shadow-[0_0_25px_rgba(0,255,255,0.3)] object-cover"
+                        />
+                    </motion.div>
+
+                    {/* Right Side — Content */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 40 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 }}
+                        className="space-y-6"
+                    >
+                        <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-linear-to-r/hsl from-emerald-400 to-sky-600">
+                            About IEEE BranchFest 2025
+                        </h2>
+                        <p className="text-gray-300 leading-relaxed text-sm sm:text-lg">
+                            IEEE BranchFest 2025 is the ultimate fusion of
+                            innovation, technology, and collaboration — where
+                            bright young minds from across the country gather to
+                            showcase ideas, connect with industry leaders, and
+                            shape the future of tech. Expect a full spectrum of
+                            activities, from hackathons and robotics challenges
+                            to networking and startup showcases.
+                        </p>
+
+                        {/* Stats Boxes */}
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 pt-6">
+                            {stats.map((item, index) => (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{
+                                        delay: index * 0.1,
+                                        duration: 0.8,
+                                    }}
+                                    viewport={{ once: true }}
+                                    className="relative bg-gray-900/70 backdrop-blur-md border border-cyan-500/50 rounded-2xl py-4 px-2 text-center shadow-[0_0_15px_rgba(0,255,255,0.2)] hover:shadow-[0_0_25px_rgba(0,255,255,0.4)] transition-all duration-300"
+                                >
+                                    <div className="sm:text-lg md:text-xl xl:text-2xl font-bold text-cyan-400 mb-1">
+                                        {item.value}
+                                    </div>
+                                    <div className="text-gray-400 text-xs sm:text-sm md:text-base uppercase tracking-wider">
+                                        {item.label}
+                                    </div>
+                                    <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-pulse"></div>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </motion.div>
+                </div>
+
+                {/* Animated horizontal lines for futuristic effect */}
                 <motion.div
-                    initial={{ opacity: 0, x: -40 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
-                    className="relative w-full md:w-1/2"
-                >
-                    <div className="absolute inset-0 rounded-3xl border border-cyan-500/40 blur-md animate-pulse"></div>
-                    <img
-                        src={Banner_img}
-                        alt="IEEE BranchFest 2025"
-                        className="rounded-3xl w-full shadow-[0_0_25px_rgba(0,255,255,0.3)] object-cover"
-                    />
-                </motion.div>
-
-                {/* Right Side — Content */}
+                    animate={{ x: [0, 100, 0] }}
+                    transition={{ duration: 10, repeat: Infinity }}
+                    className="absolute top-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40"
+                ></motion.div>
                 <motion.div
-                    initial={{ opacity: 0, x: 40 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
-                    className="w-full md:w-1/2 space-y-6"
-                >
-                    <h2 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
-                        About IEEE BranchFest 2025
-                    </h2>
-                    <p className="text-gray-300 leading-relaxed text-lg">
-                        IEEE BranchFest 2025 is the ultimate fusion of
-                        innovation, technology, and collaboration — where bright
-                        young minds from across the country gather to showcase
-                        ideas, connect with industry leaders, and shape the
-                        future of tech. Expect a full spectrum of activities,
-                        from hackathons and robotics challenges to networking
-                        and startup showcases.
-                    </p>
-
-                    {/* Stats Boxes */}
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6">
-                        {stats.map((item, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{
-                                    delay: index * 0.1,
-                                    duration: 0.8,
-                                }}
-                                viewport={{ once: true }}
-                                className="relative bg-gray-900/70 backdrop-blur-md border border-cyan-500/50 rounded-2xl py-6 px-4 text-center shadow-[0_0_15px_rgba(0,255,255,0.2)] hover:shadow-[0_0_25px_rgba(0,255,255,0.4)] transition-all duration-300"
-                            >
-                                <div className="text-3xl font-bold text-cyan-400 mb-1">
-                                    {item.value}
-                                </div>
-                                <div className="text-gray-400 text-sm uppercase tracking-wider">
-                                    {item.label}
-                                </div>
-                                <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-pulse"></div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </motion.div>
+                    animate={{ x: [0, -100, 0] }}
+                    transition={{ duration: 12, repeat: Infinity }}
+                    className="absolute bottom-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"
+                ></motion.div>
             </div>
-
-            {/* Animated horizontal lines for futuristic effect */}
-            <motion.div
-                animate={{ x: [0, 100, 0] }}
-                transition={{ duration: 10, repeat: Infinity }}
-                className="absolute top-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40"
-            ></motion.div>
-            <motion.div
-                animate={{ x: [0, -100, 0] }}
-                transition={{ duration: 12, repeat: Infinity }}
-                className="absolute bottom-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"
-            ></motion.div>
         </section>
     );
 };
