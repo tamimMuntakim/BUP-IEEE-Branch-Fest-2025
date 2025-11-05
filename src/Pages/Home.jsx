@@ -6,6 +6,7 @@ import PartnerWithUs from "../Components/PartnerWithUs";
 import HallOfFame from "../Components/HallOfFame";
 import JobFair from "../Components/JobFair";
 import UnderConstruction from "../Components/UnderConstruction";
+import EstimatedPartners from "../Components/EstimatedPartners";
 
 
 
@@ -26,6 +27,7 @@ const Home = () => {
             <Competitions></Competitions>
             <JobFair></JobFair>
             <PartnerWithUs></PartnerWithUs>
+            <EstimatedPartners></EstimatedPartners>
             <HallOfFame></HallOfFame>
         </div>
     );
