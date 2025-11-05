@@ -72,44 +72,47 @@ const Competitions = () => {
 
     return (
         <section className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden">
-            {/* Background tech grid */}
-            <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.08),transparent_70%)]"></div>
-                <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
-                <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
+            <div className="w-11/12 md:container mx-auto">
+                {/* Background tech grid */}
+
+                <div className="absolute inset-0">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.08),transparent_70%)]"></div>
+                    <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
+                    <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
+                </div>
+
+                {/* Animated title */}
+                <motion.h2
+                    initial={{ opacity: 0, y: -40 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                    className="text-center text-4xl md:text-5xl font-extrabold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 relative z-10"
+                >
+                    Competitions at IEEE BranchFest 2025
+                </motion.h2>
+
+                {/* Competition Grid */}
+                <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 relative z-10">
+                    {competitions.map((comp, index) => (
+                        <CompetitionCard key={index} {...comp} />
+                    ))}
+                </div>
+
+                {/* Futuristic sweeping lines */}
+                <motion.div
+                    animate={{ x: [0, 100, 0] }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 10, repeat: Infinity }}
+                    className="absolute top-1/3 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40"
+                ></motion.div>
+                <motion.div
+                    animate={{ x: [0, -100, 0] }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 12, repeat: Infinity }}
+                    className="absolute bottom-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"
+                ></motion.div>
             </div>
-
-            {/* Animated title */}
-            <motion.h2
-                initial={{ opacity: 0, y: -40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-                viewport={{ once: true }}
-                className="text-center text-4xl md:text-5xl font-extrabold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 relative z-10"
-            >
-                Competitions at IEEE BranchFest 2025
-            </motion.h2>
-
-            {/* Competition Grid */}
-            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 relative z-10">
-                {competitions.map((comp, index) => (
-                    <CompetitionCard key={index} {...comp} />
-                ))}
-            </div>
-
-            {/* Futuristic sweeping lines */}
-            <motion.div
-                animate={{ x: [0, 100, 0] }}
-                viewport={{ once: true }}
-                transition={{ duration: 10, repeat: Infinity }}
-                className="absolute top-1/3 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40"
-            ></motion.div>
-            <motion.div
-                animate={{ x: [0, -100, 0] }}
-                viewport={{ once: true }}
-                transition={{ duration: 12, repeat: Infinity }}
-                className="absolute bottom-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"
-            ></motion.div>
         </section>
     );
 };
