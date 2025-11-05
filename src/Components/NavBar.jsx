@@ -6,8 +6,8 @@ import "./NavBar.css"
 const NavBar = () => {
     return (
         <div>
-            <div className="navbar bg-[#edfdfd] shadow-sm md:shadow-md shadow-secondary">
-                <div className="navbar-start">
+            <div className="py-1.5 flex justify-between">
+                <div className="">
                     <div className="dropdown">
                         <div
                             tabIndex={0}
@@ -33,7 +33,7 @@ const NavBar = () => {
                         </div>
                         <ul
                             tabIndex="-1"
-                            className="menu menu-sm md:menu-md lg:menu-lg dropdown-content bg-base-100 rounded-box z-1 mt-3 w-32 md:w-52 p-2 shadow"
+                            className="menu menu-sm md:menu-md lg:menu-lg dropdown-content bg-[#edfdfd] rounded-box z-1 mt-3 w-32 md:w-52 p-2 shadow "
                         >
                             <li>
                                 <NavLink to="/" className="nav-links">Home</NavLink>
@@ -59,12 +59,12 @@ const NavBar = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="navbar-center">
-                    <a className="btn btn-ghost md:text-lg lg:text-xl xl:text-2xl text-primary">
+                <div className="">
+                    <a className="btn btn-ghost md:text-lg lg:text-xl xl:text-2xl text-primary hover:bg-[#edfdfd]">
                         IEEE BranchFest 2025
                     </a>
                 </div>
-                <div className="navbar-end">
+                <div className="">
                     {/* <button className="btn btn-ghost btn-circle">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
