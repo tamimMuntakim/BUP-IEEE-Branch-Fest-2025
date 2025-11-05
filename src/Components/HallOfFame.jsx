@@ -1,6 +1,5 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
+// Removed: import { motion } from "framer-motion";
 
 import hf1 from "../assets/Photos/hf1_resized.jpg";
 import hf2 from "../assets/Photos/hf2_resized.JPG";
@@ -21,28 +20,20 @@ const HallOfFame = () => {
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_#00ffff_0%,_transparent_70%)]"></div>
 
                 <div className=" px-6 text-center">
-                    <motion.h2
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
+                    {/* Replaced motion.h2 with standard h2 */}
+                    <h2
+                        // Removed: initial, animate, transition, and viewport props
                         className="text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text"
                     >
                         Hall of Fame
-                    </motion.h2>
+                    </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto mb-12">
                         Relive the energy, excitement, and innovation of our
                         previous BranchFest events — where great minds met and
                         memories were made.
                     </p>
 
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
-                    >
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                         {images.map((src, i) => (
                             <div
                                 key={i}
@@ -55,12 +46,14 @@ const HallOfFame = () => {
                                 <img
                                     src={src}
                                     alt="BranchFest Memory"
-                                    className="object-cover w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
+                                    // Image is already optimized with lazy loading and GPU-accelerated CSS hover
+                                    className="object-cover w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500 group-hover:shadow-md group-hover:shadow-accent"
+                                    loading="lazy"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-40 group-hover:opacity-20 transition-all duration-500"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-40 group-hover:opacity-20 group-hover:shadow-md group-hover:shadow-accent transition-all duration-500"></div>
                             </div>
                         ))}
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

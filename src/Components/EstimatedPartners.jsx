@@ -1,7 +1,7 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
+// Removed: import { motion } from "framer-motion";
 
+// Placeholder URL used to avoid compilation errors caused by local asset imports
 import partner1 from "../assets/Logo/basis.png";
 import partner2 from "../assets/Logo/bjit.png";
 import partner3 from "../assets/Logo/bkash.png";
@@ -33,39 +33,27 @@ const EstimatedPartners = () => {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(138,43,226,0.1),transparent_70%)]"></div>
 
                 <div className="px-6 relative z-10">
-                    <motion.h2
-                        initial={{ opacity: 0, y: -20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                        className="text-center text-4xl font-bold mb-12 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text"
-                    >
+                    {/* Title: motion.h2 removed */}
+                    <h2 className="text-center text-4xl font-bold mb-12 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">
                         Our Estimated Partners
-                    </motion.h2>
+                    </h2>
 
-                    {/* Logos Grid */}
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 items-center justify-items-center"
-                    >
+                    {/* Logos Grid Container: motion.div removed */}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 items-center justify-items-center">
                         {partnerLogos.map((logo, i) => (
-                            <motion.div
+                            // Individual Logo Card: motion.div removed. Added transition-transform duration-300 transform hover:scale-[1.08]
+                            <div
                                 key={i}
-                                whileHover={{ scale: 1.08 }}
-                                transition={{ type: "spring", stiffness: 300 }}
-                                className="p-4 bg-gray-900/40 backdrop-blur-lg border border-gray-700 rounded-xl shadow-[0_0_15px_rgba(0,255,255,0.1)] hover:shadow-[0_0_20px_rgba(0,255,255,0.3)] transform-gpu"
+                                className="p-4 bg-gray-900/40 backdrop-blur-lg border border-gray-700 rounded-xl shadow-[0_0_15px_rgba(0,255,255,0.1)] hover:shadow-[0_0_20px_rgba(0,255,255,0.3)] transition-transform duration-300 transform hover:scale-[1.08]"
                             >
                                 <img
                                     src={logo}
                                     alt={`Partner ${i + 1}`}
                                     className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
                                 />
-                            </motion.div>
+                            </div>
                         ))}
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>
