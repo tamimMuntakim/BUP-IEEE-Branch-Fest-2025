@@ -1,17 +1,20 @@
 import React from "react";
+import { MdOutlineMenuOpen } from "react-icons/md";
+import { NavLink } from "react-router";
+import "./NavBar.css"
 
 const NavBar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="navbar bg-[#edfdfd] shadow-sm md:shadow-md shadow-secondary">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div
                             tabIndex={0}
                             role="button"
-                            className="btn btn-ghost btn-circle"
+                            className="btn btn-ghost btn-circle md:text-base lg:text-lg xl:text-2xl"
                         >
-                            <svg
+                            {/* <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-5 w-5"
                                 fill="none"
@@ -25,26 +28,39 @@ const NavBar = () => {
                                     strokeWidth="2"
                                     d="M4 6h16M4 12h16M4 18h7"
                                 />{" "}
-                            </svg>
+                            </svg> */}
+                            <MdOutlineMenuOpen className="font-extrabold text-secondary"></MdOutlineMenuOpen>
                         </div>
                         <ul
                             tabIndex="-1"
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                            className="menu menu-sm md:menu-md lg:menu-lg dropdown-content bg-base-100 rounded-box z-1 mt-3 w-32 md:w-52 p-2 shadow"
                         >
                             <li>
-                                <a>Homepage</a>
+                                <NavLink to="/" className="nav-links">Home</NavLink>
                             </li>
                             <li>
-                                <a>Portfolio</a>
+                                <NavLink to="#about" className="">About</NavLink>
                             </li>
                             <li>
-                                <a>About</a>
+                                <NavLink to="#segments" className="">Segments</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/job-fair" className="nav-links">Job Fair</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="#sponsors" className="">Sponsors</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/blogs" className="nav-links">Blogs</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="#contact" className="">Contact</NavLink>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="navbar-center">
-                    <a className="btn btn-ghost text-sm md:text-md lg:text-lg xl:text-xl">
+                    <a className="btn btn-ghost md:text-lg lg:text-xl xl:text-2xl text-primary">
                         IEEE BranchFest 2025
                     </a>
                 </div>
@@ -86,6 +102,10 @@ const NavBar = () => {
                             <span className="badge badge-xs badge-primary indicator-item"></span>
                         </div>
                     </button> */}
+                    <div className="hidden sm:gap-2 md:gap-4 sm:flex">
+                        <button className="btn btn-secondary btn-sm md:btn-md text-white hover:text-white">Register</button>
+                    <button className="btn btn-accent btn-sm md:btn-md text-white hover:text-white">Sponsor</button>
+                    </div>
                 </div>
             </div>
         </div>
