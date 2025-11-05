@@ -5,6 +5,7 @@ import Competitions from "../Components/Competitions";
 import PartnerWithUs from "../Components/PartnerWithUs";
 import HallOfFame from "../Components/HallOfFame";
 import JobFair from "../Components/JobFair";
+import UnderConstruction from "../Components/UnderConstruction";
 
 
 
@@ -19,6 +20,7 @@ import JobFair from "../Components/JobFair";
 const Home = () => {
     return (
         <div>
+            <UnderConstruction></UnderConstruction>
             <Hero></Hero>
             <About></About>
             <Competitions></Competitions>
