@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// eslint-disable-next-line no-unused-vars
+// We keep motion imported since it's used for the countdown
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -38,37 +38,25 @@ const Hero = () => {
 
     return (
         <section className="relative flex flex-col items-center justify-center min-h-[90vh] bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden ">
-            {/* Techy animated background lines */}
             <div className="w-11/12 md:container mx-auto">
+                {/* Techy animated background lines (CSS grid/radial gradient) - RETAINED */}
                 <div className="absolute inset-0">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.1),transparent_70%)]"></div>
                     <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
                     <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
                 </div>
 
-                {/* Animated Title */}
-                <motion.h1
-                    initial={{ opacity: 0, y: -40 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                    viewport={{ once: true }}
-                    className="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-4 bg-clip-text text-transparent bg-linear-to-r/hsl from-cyan-600 to-teal-400 text-center"
-                >
+                {/* Animated Title -> CONVERTED TO STANDARD H1 (Loads Instantly) */}
+                <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-4 bg-clip-text text-transparent bg-linear-to-r/hsl from-sky-600 to-teal-400 text-center">
                     IEEE BranchFest 2025
-                </motion.h1>
+                </h1>
 
-                {/* Subtitle */}
-                <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.3, duration: 1 }}
-                    className="sm:text-xl md:text-3xl text-gray-300 mb-12 text-center px-6"
-                >
+                {/* Subtitle -> CONVERTED TO STANDARD P (Loads Instantly) */}
+                <p className="sm:text-xl md:text-3xl text-gray-300 mb-12 text-center px-6">
                     Where Tomorrow's Innovators Meet Today's Industry Leaders
-                </motion.p>
+                </p>
 
-                {/* Countdown Timer */}
+                {/* Countdown Timer -> FRAMER MOTION RETAINED */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -100,19 +88,7 @@ const Hero = () => {
                     </div>
                 </motion.div>
 
-                {/* Decorative moving lines */}
-                <motion.div
-                    animate={{ x: [0, 100, 0] }}
-                    transition={{ duration: 8, repeat: Infinity }}
-                    viewport={{ once: true }}
-                    className="absolute top-1/3 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40"
-                ></motion.div>
-                <motion.div
-                    animate={{ x: [0, -100, 0] }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 10, repeat: Infinity }}
-                    className="absolute bottom-1/3 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"
-                ></motion.div>
+                {/* Decorative moving lines -> REMOVED ENTIRELY for performance */}
             </div>
         </section>
     );

@@ -1,7 +1,6 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
 import CompetitionCard from "./CompetitionCard";
+
 import poster_presentation from "../assets/Photos/poster_persentation_resized.JPG";
 import digital_art_contest from "../assets/Photos/digital_art_resized.jpg";
 import design_a_thon from "../assets/Photos/design_a_thron_resized.jpg";
@@ -81,16 +80,10 @@ const Competitions = () => {
                     <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
                 </div>
 
-                {/* Animated title */}
-                <motion.h2
-                    initial={{ opacity: 0, y: -40 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                    viewport={{ once: true }}
-                    className="text-center text-4xl md:text-5xl font-extrabold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 relative z-10"
-                >
+                {/* Title: Framer Motion removed */}
+                <h2 className="text-center text-4xl md:text-5xl font-extrabold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 relative z-10">
                     Competitions at IEEE BranchFest 2025
-                </motion.h2>
+                </h2>
 
                 {/* Competition Grid */}
                 <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 relative z-10">
@@ -98,20 +91,7 @@ const Competitions = () => {
                         <CompetitionCard key={index} {...comp} />
                     ))}
                 </div>
-
-                {/* Futuristic sweeping lines */}
-                <motion.div
-                    animate={{ x: [0, 100, 0] }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 10, repeat: Infinity }}
-                    className="absolute top-1/3 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40"
-                ></motion.div>
-                <motion.div
-                    animate={{ x: [0, -100, 0] }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 12, repeat: Infinity }}
-                    className="absolute bottom-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"
-                ></motion.div>
+                {/* Removed futuristic sweeping lines for performance */}
             </div>
         </section>
     );

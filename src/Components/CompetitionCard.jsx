@@ -1,20 +1,19 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
+// Removed: import { motion } from "framer-motion";
 
 const CompetitionCard = ({ image, title, description, link }) => {
     return (
-        <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 200 }}
-            viewport={{ once: true }}
-            className="relative bg-gray-900/70 border border-cyan-500/40 rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(0,255,255,0.2)] hover:shadow-[0_0_25px_rgba(0,255,255,0.5)] transition-all duration-300"
+        <div
+            // Added Tailwind classes for the hover effect
+            className="relative bg-gray-900/70 border border-cyan-500/40 rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(0,255,255,0.2)] hover:shadow-[0_0_25px_rgba(0,255,255,0.5)] transition-all duration-300 transform hover:scale-[1.03]" // Added 'transform' and 'hover:scale-[1.03]'
         >
             {/* Competition Image */}
             <div className="relative h-48 overflow-hidden">
                 <img
                     src={image}
                     alt={title}
+                    // IMPORTANT: Keep lazy loading for performance
+                    loading="lazy"
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -27,16 +26,15 @@ const CompetitionCard = ({ image, title, description, link }) => {
                 </h3>
                 <p className="text-gray-300 text-sm flex-grow">{description}</p>
 
-                <motion.a
+                {/* Anchor Tag is already non-Framer Motion, just ensure shadow is pure CSS */}
+                <a
                     href={link || "#"}
-                    whileHover={{ boxShadow: "0 0 15px rgba(0,255,255,0.7)" }}
-                    viewport={{ once: true }}
-                    className="mt-4 inline-block text-center px-4 py-2 border border-cyan-500 text-cyan-400 rounded-lg text-sm font-medium hover:bg-cyan-500 hover:text-black transition-all duration-300"
+                    className="mt-4 inline-block text-center px-4 py-2 border border-cyan-500 text-cyan-400 rounded-lg text-sm font-medium hover:bg-cyan-500 hover:text-black transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,255,0.7)]"
                 >
                     Learn More
-                </motion.a>
+                </a>
             </div>
-        </motion.div>
+        </div>
     );
 };
 

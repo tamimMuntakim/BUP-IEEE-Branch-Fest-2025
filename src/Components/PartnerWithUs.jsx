@@ -1,6 +1,5 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
+// Removed: import { motion } from "framer-motion";
 import { FaMedal } from "react-icons/fa";
 
 const tiers = [
@@ -53,15 +52,10 @@ const PartnerWithUs = () => {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(138,43,226,0.1),transparent_70%)]"></div>
 
                 <div className="px-6 text-center relative z-10">
-                    <motion.h2
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                        className="text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text"
-                    >
+                    {/* Title: Removed motion.h2 and animation props */}
+                    <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">
                         Partner With Us
-                    </motion.h2>
+                    </h2>
                     <p className="text-gray-400 max-w-3xl mx-auto mb-16 text-lg">
                         Become a driving force behind IEEE BranchFest 2025 —
                         where innovation meets opportunity. Partner with us to
@@ -71,13 +65,11 @@ const PartnerWithUs = () => {
 
                     <div className="grid md:grid-cols-3 gap-10">
                         {tiers.map((tier, index) => (
-                            <motion.div
+                            // Tier Cards: Replaced motion.div with standard div. Entrance animation removed.
+                            // The hover animation is now purely CSS (hover:scale-105).
+                            <div
                                 key={tier.name}
-                                initial={{ opacity: 0, y: 40 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: index * 0.2 }}
-                                className={`relative overflow-hidden border border-gray-700 rounded-2xl backdrop-blur-xl bg-gray-900/50 p-8 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_40px_rgba(0,255,255,0.3)] group`}
+                                className={`relative overflow-hidden border border-gray-700 rounded-2xl backdrop-blur-xl bg-gray-900/50 p-8 transition-all duration-500 hover:scale-105 group`}
                             >
                                 {/* Glowing ring background */}
                                 <div
@@ -110,16 +102,14 @@ const PartnerWithUs = () => {
                                         ))}
                                     </ul>
 
-                                    <motion.button
-                                        whileHover={{ scale: 1.05 }}
-                                        whileTap={{ scale: 0.95 }}
-                                        viewport={{ once: true }}
-                                        className={`mt-8 px-5 py-2 text-sm font-semibold rounded-lg bg-gradient-to-r ${tier.gradient} text-black shadow-md hover:shadow-lg transition-all`}
+                                    {/* Button: Replaced motion.button with standard button. Added hover:scale-105 and active:scale-95 */}
+                                    <button
+                                        className={`mt-8 px-5 py-2 text-sm font-semibold rounded-lg bg-gradient-to-r ${tier.gradient} text-black shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105 active:scale-95`}
                                     >
                                         Become a {tier.name} Partner
-                                    </motion.button>
+                                    </button>
                                 </div>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>
