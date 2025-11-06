@@ -1,56 +1,71 @@
 import React from "react";
-// We keep motion imported since it's used for the Stats boxes
+
+// eslint-disable-next-line no-unused-vars
+
 import { motion } from "framer-motion";
-// FIX: Removed local image import (Banner_img from "../assets/Photos/banner_resized.jpg")
-// and replaced it with a web-based placeholder URL to fix the compilation error.
+
 import Banner_img from "../assets/Photos/banner_resized.jpg";
 
 const About = () => {
     const stats = [
         { label: "Participants", value: "1200+" },
+
         { label: "Universities", value: "30+" },
+
         { label: "Companies", value: "25+" },
+
         { label: "Budget", value: "$50K+" },
     ];
 
     return (
-        <section id="about" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden">
+        <section className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden">
             {/* Background tech grid */}
+
             <div className="w-11/12 md:container mx-auto">
                 <div className="absolute inset-0">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.08),transparent_70%)]"></div>
+
                     <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
+
                     <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
                 </div>
 
                 <div className="flex flex-col xl:flex-row items-center gap-8 relative z-10 justify-center">
-                    {/* Left Side — Image: CONVERTED to standard DIV for instant load */}
-                    <div
-                        // Removed Framer Motion entrance animation for faster loading
-                        className="relative"
+                    {/* Left Side — Image */}
+
+                    <motion.div
+                        initial={{ opacity: 0, x: -40 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 }}
+                        className="relative will-change-transform"
+                        viewport={{ once: true }}
                     >
-                        {/* Static CSS blur effect remains */}
                         <div className="absolute inset-0 rounded-3xl border border-cyan-500/40 blur-md animate-pulse"></div>
+
                         <img
-                            // FIX: Using the placeholder URL
                             src={Banner_img}
                             alt="IEEE BranchFest 2025"
                             className="rounded-3xl w-full shadow-[0_0_25px_rgba(0,255,255,0.3)] object-cover"
-                            loading="lazy"
-                            width="800"
-                            height="500"
+                            loading="lazy" // <--- ADD THIS
+                            width="800" // <--- Set explicit dimensions (improves layout shift)
+                            height="500" // <--- Set explicit dimensions
                         />
-                    </div>
+                    </motion.div>
 
-                    {/* Right Side — Content: CONVERTED to standard DIV for instant load */}
-                    <div
-                        // Removed Framer Motion entrance animation for faster loading
+                    {/* Right Side — Content */}
+
+                    <motion.div
+                        initial={{ opacity: 0, x: 40 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 }}
                         className="space-y-6"
+                        viewport={{ once: true }}
                     >
-                        <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-linear-to-r/hsl from-emerald-400 to-sky-600">
+                        <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-linear-to-r/hsl from-emerald-400 to-sky-600 text-center xl:text-left">
                             About IEEE BranchFest 2025
                         </h2>
-                        <p className="text-gray-300 leading-relaxed text-sm sm:text-lg md:text-justify">
+
+                        <p className="text-gray-300 leading-relaxed text-sm sm:text-lg text-justify">
                             IEEE BranchFest 2025 is the ultimate fusion of
                             innovation, technology, and collaboration — where
                             bright young minds from across the country gather to
@@ -60,7 +75,8 @@ const About = () => {
                             to networking and startup showcases.
                         </p>
 
-                        {/* Stats Boxes: FRAMER MOTION RETAINED (for stagger-in-view effect) */}
+                        {/* Stats Boxes */}
+
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 pt-6">
                             {stats.map((item, index) => (
                                 <motion.div
@@ -78,17 +94,25 @@ const About = () => {
                                     <div className="sm:text-lg md:text-xl xl:text-2xl font-bold text-cyan-400 mb-1">
                                         {item.value}
                                     </div>
-                                    <div className="text-gray-400 text-xs sm:text-sm md:text-base uppercase tracking-wider">
+                                    <div className="text-gray-400 text-xs sm:text-sm md:text-base uppercase">
                                         {item.label}
                                     </div>
                                     <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-pulse"></div>
                                 </motion.div>
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
-                {/* Decorative moving lines (removed for performance) */}
+                {/* Animated horizontal lines for futuristic effect */}
+
+                <div
+                    className="absolute top-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40 animate-slow-slide-right" // You'd define animate-slow-slide-right in your CSS
+                ></div>
+
+                <div
+                    className="absolute top-3/4 right-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-40 animate-slow-slide-right" // You'd define animate-slow-slide-right in your CSS
+                ></div>
             </div>
         </section>
     );

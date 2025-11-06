@@ -33,7 +33,7 @@ const NavBar = () => {
                         </div>
                         <ul
                             tabIndex="-1"
-                            className="menu menu-sm md:menu-md lg:menu-lg dropdown-content bg-[#edfdfd] rounded-box z-1 mt-3 w-32 md:w-52 p-2 shadow "
+                            className="menu menu-md lg:menu-xl dropdown-content bg-[#edfdfd] rounded-box z-1 mt-3 w-36 md:w-56 p-2 shadow "
                         >
                             <li>
                                 <NavLink to="/" className="nav-links">Home</NavLink>

@@ -69,7 +69,7 @@ const PartnerWithUs = () => {
                             // The hover animation is now purely CSS (hover:scale-105).
                             <div
                                 key={tier.name}
-                                className={`relative overflow-hidden border border-gray-700 rounded-2xl backdrop-blur-xl bg-gray-900/50 p-8 transition-all duration-500 hover:scale-105 group`}
+                                className={`relative overflow-hidden border border-gray-700 rounded-2xl backdrop-blur-xl bg-gray-900/50 p-4 md:p-8 transition-all duration-500 hover:scale-105 group`}
                             >
                                 {/* Glowing ring background */}
                                 <div
