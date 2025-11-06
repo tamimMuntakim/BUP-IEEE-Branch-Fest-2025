@@ -10,9 +10,21 @@ import it_business_idea from "../assets/Photos/it_business_resized.JPG";
 import abstract_submission from "../assets/Photos/abstract_submission_resized.jpg";
 import tech_reels_competition from "../assets/Photos/reel_resized.JPG";
 import ethical_case_solving from "../assets/Photos/ethical_case_resized.jpg";
+import logo_design from "../assets/Photos/logo_design.png"
 
 const Competitions = () => {
     const competitions = [
+        {
+            title: "Logo Design Contest",
+            image: logo_design,
+            description:
+                "We’re looking for a unique, creative, and meaningful logo that captures the spirit of technology, innovation, and creativity— the essence of BranchFest!",
+            registrationDeadline: "2025-11-08",
+            rulebookLink:
+                "https://drive.google.com/file/d/1pSw5nrAeep7jzkeHSMpxcCA-eVS-8jFe/view",
+            registrationLink:
+                "https://forms.gle/NY5cAt8zL5YjJdv99",
+        },
         {
             title: "Poster Presentation",
             image: poster_presentation,
@@ -38,7 +50,7 @@ const Competitions = () => {
             image: design_a_thon,
             description:
                 "24-hour intensive design competition to solve real-world problems through innovative solutions.",
-            registrationDeadline: "2025-02-22",
+            registrationDeadline: "2025-12-22",
             rulebookLink: "https://example.com/rulebook/design-a-thon.pdf",
             registrationLink: "https://example.com/register/design-a-thon",
         },

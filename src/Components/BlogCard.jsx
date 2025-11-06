@@ -28,7 +28,7 @@ const BlogCard = ({ blog }) => {
                 id={`modal_${blog.id}`}
                 className="modal  sm:modal-middle"
             >
-                <div className="modal-box bg-gray-900 text-gray-200 border border-gray-700 w-[95%] sm:w-[85%] lg:w-[70%] max-w-none">
+                <div className="modal-box bg-gray-900 text-gray-200 border border-gray-700 w-[95%] sm:w-[85%] lg:w-[70%] max-w-none max-h-[60vh]">
                     <h3 className="font-bold text-lg bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
                         {blog.title}
                     </h3>

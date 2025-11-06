@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 // Updated to be an array of updates. The component will now cycle through all items.
 const latestUpdateData = [
     {
-        news: "Deadline Extended by 3 Days for Logo Design Contest! New Deadline: November 8, 2025 (11:59 PM BST)",
+        news: "Deadline Extended by 3 Days for Logo Design Contest! New Deadline: November 8th, 2025 (11:59 PM BST)",
         redirect_to: "https://forms.gle/NY5cAt8zL5YjJdv99",
         redirecting_text: "Submit Now",
     },

@@ -15,7 +15,10 @@ const Footer = () => {
                         <p className="font-semibold text-white">
                             IEEE BranchFest 2025
                         </p>
-                        <p>November 28, 2025 | BUP Campus, Dhaka</p>
+                        <p>
+                            25<sup>th</sup> - 26<sup>th</sup> November, 2025 |
+                            BUP Campus, Mirpur Cantonment, Dhaka-1216
+                        </p>
                     </div>
 
                     {/* Center Section - Socials */}
@@ -58,7 +61,7 @@ const Footer = () => {
                             <span className="text-purple-400 font-semibold">
                                 WIE Affinity Group
                             </span>
-                            , and{" "}
+                            {" "} and{" "}
                             <span className="text-blue-400 font-semibold">
                                 Computer Society Chapter
                             </span>

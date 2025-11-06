@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-
+import { IoIosArrowDropdownCircle, IoMdBookmarks } from "react-icons/io";
+import { ImCross } from "react-icons/im";
+import { MdAddCircle } from "react-icons/md";
+import { FcAlarmClock } from "react-icons/fc";
 const CompetitionCard = ({
     image,
     title,
@@ -14,6 +17,35 @@ const CompetitionCard = ({
     const isRegistrationOpen = registrationDeadline
         ? new Date(registrationDeadline) > new Date()
         : false;
+
+    // Function to add ordinal suffix (st, nd, rd, th) to a day number
+    const getOrdinal = (day) => {
+        if (day > 3 && day < 21) return "th";
+        switch (day % 10) {
+            case 1:
+                return "st";
+            case 2:
+                return "nd";
+            case 3:
+                return "rd";
+            default:
+                return "th";
+        }
+    };
+
+    // Assuming registrationDeadline is a valid Date object or string:
+    const dateObj = new Date(registrationDeadline);
+
+    // Get components
+    const month = dateObj.toLocaleDateString(undefined, { month: "long" });
+    const dayNum = dateObj.getDate();
+    const year = dateObj.getFullYear();
+    const weekday = dateObj.toLocaleDateString(undefined, { weekday: "long" });
+
+    // Combine them into the desired format
+    const formattedDate = `${month} ${dayNum}${getOrdinal(
+        dayNum
+    )} (${weekday}), ${year}`;
 
     const handleOpenModal = () => {
         setIsOpen(true);
@@ -52,10 +84,9 @@ const CompetitionCard = ({
 
                     <button
                         onClick={handleOpenModal}
-                        className="mt-4 inline-block text-center px-4 py-2 border border-cyan-500 
-                        text-cyan-400 rounded-lg text-sm font-medium hover:bg-cyan-500 hover:text-black 
-                        transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,255,0.7)]"
+                        className="mt-4 btn btn-outline btn-accent hover:text-white"
                     >
+                        <IoIosArrowDropdownCircle></IoIosArrowDropdownCircle>
                         Learn More
                     </button>
                 </div>
@@ -91,12 +122,11 @@ const CompetitionCard = ({
                             </p>
 
                             {registrationDeadline && (
-                                <p className="text-sm text-gray-400 mb-4">
-                                    ⏰ Registration Deadline:{" "}
+                                <p className="text-sm text-gray-400 mb-4 flex gap-1 items-center">
+                                    <FcAlarmClock></FcAlarmClock>
+                                    Registration Deadline:{" "}
                                     <span className="text-cyan-300">
-                                        {new Date(
-                                            registrationDeadline
-                                        ).toLocaleDateString()}
+                                        {formattedDate}
                                     </span>
                                 </p>
                             )}
@@ -108,9 +138,10 @@ const CompetitionCard = ({
                                         href={rulebookLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="btn-accent btn btn-sm md:btn-md"
+                                        className="btn-accent btn btn-sm md:btn-md text-white"
                                     >
-                                        📘 View Rulebook
+                                        <IoMdBookmarks></IoMdBookmarks>
+                                        View Rulebook
                                     </a>
                                 )}
 
@@ -120,16 +151,18 @@ const CompetitionCard = ({
                                         href={registrationLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="btn-accent btn btn-sm md:btn-md"
+                                        className="btn-accent btn btn-sm md:btn-md btn-soft hover:text-white"
                                     >
-                                        📝 Register Now
+                                        <MdAddCircle></MdAddCircle>
+                                        Register Now
                                     </a>
                                 ) : (
                                     <button
                                         disabled
-                                        className="px-4 py-2 border border-gray-600 text-gray-400 rounded-lg text-sm font-medium cursor-not-allowed"
+                                        className="btn btn-sm md:btn-md cursor-not-allowed"
                                     >
-                                        ❌ Registration Closed
+                                        <ImCross className="text-red-900"></ImCross>
+                                        Registration Closed
                                     </button>
                                 )}
                             </div>
@@ -139,7 +172,7 @@ const CompetitionCard = ({
                     {/* Close Button */}
                     <div className="modal-action">
                         <form method="dialog">
-                            <button className="btn border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black transition-all">
+                            <button className="btn btn-soft btn-accent hover:text-white btn-sm md:btn-md">
                                 Close
                             </button>
                         </form>
