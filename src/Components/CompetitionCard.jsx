@@ -179,7 +179,7 @@ const CompetitionCard = ({
                         </form>
                     </div>
                 </div>
-                
+
                 {/* 👈 CRITICAL ADDITION: Modal Backdrop for click-outside-to-close */}
                 <form method="dialog" className="modal-backdrop">
                     <button>close</button>
