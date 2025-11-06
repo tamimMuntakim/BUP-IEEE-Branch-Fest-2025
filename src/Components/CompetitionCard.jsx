@@ -96,7 +96,7 @@ const CompetitionCard = ({
             {/* === MODAL === */}
             <dialog
                 id={title.replace(/\s+/g, "_")}
-                className="modal modal-bottom sm:modal-middle"
+                className="modal md:modal-middle sm:modal-start"
             >
                 <div
                     className="modal-box bg-gray-900 text-gray-100 border border-cyan-500/40 
