@@ -4,6 +4,7 @@ import {
 import HomeLayout from "../Layouts/HomeLayout";
 import Home from "../Pages/Home";
 import ErrorPage from "../Pages/ErrorPage";
+import BlogPage from "../Pages/BlogPage";
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
                 path: "/",
                 element: <Home></Home>,
             },
+            {
+                path: "/blogs",
+                element: <BlogPage></BlogPage>
+            }
         ]
     },
     {
