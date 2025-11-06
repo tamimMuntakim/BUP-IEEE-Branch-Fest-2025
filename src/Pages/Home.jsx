@@ -8,6 +8,7 @@ import JobFair from "../Components/JobFair";
 import UnderConstruction from "../Components/UnderConstruction";
 import EstimatedPartners from "../Components/EstimatedPartners";
 import Contact from "../Components/Contact";
+import LatestUpdate from "../Components/LatestUpdate";
 
 
 
@@ -23,6 +24,7 @@ const Home = () => {
     return (
         <div>
             <UnderConstruction></UnderConstruction>
+            <LatestUpdate></LatestUpdate>
             <Hero></Hero>
             <About></About>
             <Competitions></Competitions>
