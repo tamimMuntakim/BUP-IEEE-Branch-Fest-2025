@@ -54,16 +54,16 @@ const Footer = () => {
                     <div className="space-y-2 text-sm">
                         <p className="text-gray-400">
                             Organized by{" "}
-                            <span className="text-cyan-400 font-semibold">
+                            <span className="text-blue-400 font-semibold">
                                 IEEE BUP Student Branch
                             </span>
                             ,{" "}
-                            <span className="text-purple-400 font-semibold">
-                                WIE Affinity Group
-                            </span>
-                            {" "} and{" "}
-                            <span className="text-blue-400 font-semibold">
-                                Computer Society Chapter
+                            <span className="text-purple-500 font-semibold">
+                                IEEE BUP Student Branch WIE Affinity Group
+                            </span>{" "}
+                            and{" "}
+                            <span className="text-amber-400 font-semibold">
+                                IEEE Computer Society BUP Student Branch Chapter
                             </span>
                         </p>
                         <p className="text-gray-500 text-xs">

@@ -59,10 +59,25 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
-                    className="text-5xl sm:text-7xl md:text-8xl font-extrabold mb-4 bg-clip-text text-transparent bg-linear-to-r/hsl from-sky-600 to-teal-400 text-center"
+                    className="text-5xl sm:text-7xl md:text-8xl font-extrabold bg-clip-text text-transparent bg-linear-to-r/hsl from-sky-600 to-teal-400 text-center"
                 >
                     IEEE BranchFest 2025
                 </motion.h1>
+
+                <p className="text-gray-200 text-xs md:text-sm text-center mb-6 mt-2">
+                    Organized by{" "}
+                    <span className="text-blue-400 font-semibold">
+                        IEEE BUP Student Branch
+                    </span>
+                    ,{" "}
+                    <span className="text-purple-500 font-semibold">
+                        IEEE BUP Student Branch WIE Affinity Group
+                    </span>{" "}
+                    and{" "}
+                    <span className="text-amber-400 font-semibold">
+                        IEEE Computer Society BUP Student Branch Chapter
+                    </span>
+                </p>
 
                 {/* Subtitle */}
 
