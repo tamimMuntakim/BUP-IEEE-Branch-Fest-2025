@@ -2,6 +2,8 @@ import React from "react";
 import { MdOutlineMenuOpen } from "react-icons/md";
 import { Link, NavLink } from "react-router";
 import "./NavBar.css"
+import { MdAddCircle } from "react-icons/md";
+import { FaMoneyBill } from "react-icons/fa";
 
 const NavBar = () => {
     return (
@@ -109,8 +111,8 @@ const NavBar = () => {
                         </div>
                     </button> */}
                     <div className="hidden sm:gap-2 md:gap-3 sm:flex">
-                        <button className="btn btn-secondary btn-sm md:btn-md text-white hover:text-white">Register</button>
-                    <button className="btn btn-accent btn-sm md:btn-md text-white hover:text-white">Sponsor</button>
+                        <button className="btn btn-secondary btn-sm md:btn-md text-white hover:text-white"><MdAddCircle></MdAddCircle> Register</button>
+                    <button className="btn btn-accent btn-sm md:btn-md text-white hover:text-white"><FaMoneyBill></FaMoneyBill> Sponsor</button>
                     </div>
                 </div>
             </div>

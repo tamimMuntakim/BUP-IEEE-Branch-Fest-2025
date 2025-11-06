@@ -1,6 +1,7 @@
 import React from "react";
 // Removed: import { motion } from "framer-motion";
 import { FaMedal } from "react-icons/fa";
+import { FaMoneyBill } from "react-icons/fa";
 
 const tiers = [
     {
@@ -106,8 +107,9 @@ const PartnerWithUs = () => {
 
                                     {/* Button: Replaced motion.button with standard button. Added hover:scale-105 and active:scale-95 */}
                                     <button
-                                        className={`mt-8 px-5 py-2 text-sm font-semibold rounded-lg bg-gradient-to-r ${tier.gradient} text-black shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105 active:scale-95`}
+                                        className={`mt-8 btn btn-sm md:btn-md bg-gradient-to-r ${tier.gradient} text-black shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105 active:scale-95 border-none`}
                                     >
+                                        <FaMoneyBill></FaMoneyBill>
                                         Become a {tier.name} Partner
                                     </button>
                                 </div>
