@@ -11,8 +11,10 @@ import partner6 from "../assets/Logo/emk-padded.png";
 import partner7 from "../assets/Logo/gp.png";
 import partner8 from "../assets/Logo/ssl.jpeg";
 import partner9 from "../assets/Logo/trustbank.png";
+import partner10 from "../assets/Logo/github_education.png";
 
 const partnerLogos = [
+    partner10,
     partner1,
     partner2,
     partner3,
@@ -49,7 +51,7 @@ const EstimatedPartners = () => {
                                 <img
                                     src={logo}
                                     alt={`Partner ${i + 1}`}
-                                    className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                                    className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 bg-white rounded"
                                 />
                             </div>
                         ))}
