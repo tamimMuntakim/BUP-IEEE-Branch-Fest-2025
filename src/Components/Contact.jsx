@@ -1,7 +1,6 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { Mail, Phone, User } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 import shehab from "../assets/Photos/Shehab.jpg";
 import mridula from "../assets/Photos/Chair_Mridula.jpg";
@@ -55,55 +54,70 @@ const Contact = () => {
 
                     {/* Contact Cards */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                        {contacts.map((person, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{
-                                    duration: 0.6,
-                                    delay: index * 0.2,
-                                }}
-                                whileHover={{ scale: 1.05 }}
-                                className="bg-gray-900/50 backdrop-blur-xl border border-gray-700 rounded-2xl shadow-[0_0_20px_rgba(0,255,255,0.15)] hover:shadow-[0_0_25px_rgba(0,255,255,0.35)] p-8 text-center transition-all duration-300"
-                            >
-                                <div className="flex justify-center mb-6">
-                                    <img
-                                        src={person.image}
-                                        alt={person.name}
-                                        className="h-24 w-24 rounded-full border-2 border-cyan-400 shadow-[0_0_15px_rgba(0,255,255,0.4)] object-cover"
-                                    />
-                                </div>
-                                <h3 className="text-xl font-semibold mb-1">
-                                    {person.name}
-                                </h3>
-                                <p className="text-gray-400 text-sm mb-4">
-                                    {person.role}
-                                </p>
-                                <p className="text-gray-400 text-sm mb-4">
-                                    {person.branch}
-                                </p>
+                        {contacts.map((person, index) => {
+                            // Assign special order classes
+                            let orderClass = "";
+                            if (index === 1) {
+                                // Shehab: first in mobile, middle in large
+                                orderClass = "order-1 lg:order-2";
+                            } else if (index === 0) {
+                                orderClass = "order-2 lg:order-1";
+                            } else if (index === 2) {
+                                orderClass = "order-3";
+                            }
 
-                                <div className="space-y-2 text-sm">
-                                    <div className="flex items-center justify-center gap-2 text-gray-300 hover:text-cyan-400 transition">
-                                        <Mail className="h-4 w-4 text-cyan-400" />
-                                        <a
-                                            href={`mailto:${person.email}`}
-                                            className="hover:underline"
-                                        >
-                                            {person.email}
-                                        </a>
+                            return (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{
+                                        duration: 0.6,
+                                        delay: index * 0.2,
+                                    }}
+                                    whileHover={{ scale: 1.05 }}
+                                    className={`bg-gray-900/50 backdrop-blur-xl border border-gray-700 rounded-2xl 
+                                    shadow-[0_0_20px_rgba(0,255,255,0.15)] hover:shadow-[0_0_25px_rgba(0,255,255,0.35)] 
+                                    p-8 text-center transition-all duration-300 ${orderClass}`}
+                                >
+                                    <div className="flex justify-center mb-6">
+                                        <img
+                                            src={person.image}
+                                            alt={person.name}
+                                            className="h-24 w-24 rounded-full border-2 border-cyan-400 shadow-[0_0_15px_rgba(0,255,255,0.4)] object-cover"
+                                        />
                                     </div>
-                                    <div className="flex items-center justify-center gap-2 text-gray-300 hover:text-cyan-400 transition">
-                                        <Phone className="h-4 w-4 text-cyan-400" />
-                                        <a href={`tel:${person.phone}`}>
-                                            {person.phone}
-                                        </a>
+                                    <h3 className="text-xl font-semibold mb-1">
+                                        {person.name}
+                                    </h3>
+                                    <p className="text-gray-400 text-sm mb-4">
+                                        {person.role}
+                                    </p>
+                                    <p className="text-gray-400 text-sm mb-4">
+                                        {person.branch}
+                                    </p>
+
+                                    <div className="space-y-2 text-sm">
+                                        <div className="flex items-center justify-center gap-2 text-gray-300 hover:text-cyan-400 transition">
+                                            <Mail className="h-4 w-4 text-cyan-400" />
+                                            <a
+                                                href={`mailto:${person.email}`}
+                                                className="hover:underline"
+                                            >
+                                                {person.email}
+                                            </a>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-2 text-gray-300 hover:text-cyan-400 transition">
+                                            <Phone className="h-4 w-4 text-cyan-400" />
+                                            <a href={`tel:${person.phone}`}>
+                                                {person.phone}
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </motion.div>
-                        ))}
+                                </motion.div>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
