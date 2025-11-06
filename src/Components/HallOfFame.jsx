@@ -15,19 +15,22 @@ import hf10 from "../assets/Photos/hf10_resized.JPG";
 const images = [hf1, hf2, hf3, hf4, hf5, hf6, hf7, hf8, hf9, hf10];
 const HallOfFame = () => {
     return (
-        <section className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden">
+        <section
+            id="hall-of-fame"
+            className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden"
+        >
             <div className="w-11/12 md:container mx-auto">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_#00ffff_0%,_transparent_70%)]"></div>
 
-                <div className=" px-6 text-center">
+                <div className="text-center">
                     {/* Replaced motion.h2 with standard h2 */}
                     <h2
                         // Removed: initial, animate, transition, and viewport props
-                        className="text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text"
+                        className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-4 bg-linear-to-r/hsl from-blue-700 to-green-400 text-transparent bg-clip-text"
                     >
                         Hall of Fame
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto mb-12">
+                    <p className="text-gray-400 max-w-2xl mx-auto mb-12 text-sm sm:text-lg">
                         Relive the energy, excitement, and innovation of our
                         previous BranchFest events — where great minds met and
                         memories were made.

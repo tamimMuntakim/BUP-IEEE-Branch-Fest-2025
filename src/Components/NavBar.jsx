@@ -1,6 +1,6 @@
 import React from "react";
 import { MdOutlineMenuOpen } from "react-icons/md";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import "./NavBar.css"
 
 const NavBar = () => {
@@ -39,30 +39,36 @@ const NavBar = () => {
                                 <NavLink to="/" className="nav-links">Home</NavLink>
                             </li>
                             <li>
-                                <NavLink to="#about" className="">About</NavLink>
+                                <a href="#about" className="">About</a>
                             </li>
                             <li>
-                                <NavLink to="#segments" className="">Segments</NavLink>
+                                <a href="#competitions" className="">Competitions</a>
                             </li>
                             <li>
-                                <NavLink to="/job-fair" className="nav-links">Job Fair</NavLink>
+                                <a href="#job-fair" className="">Job Fair</a>
                             </li>
                             <li>
-                                <NavLink to="#sponsors" className="">Sponsors</NavLink>
+                                <a href="#partner-with-us" className="">Sponsor</a>
+                            </li>
+                            <li>
+                                <a href="#partners" className="">Estimated Partners</a>
+                            </li>
+                            <li>
+                                <a href="#hall-of-fame" className="">Hall of Fame</a>
                             </li>
                             <li>
                                 <NavLink to="/blogs" className="nav-links">Blogs</NavLink>
                             </li>
                             <li>
-                                <NavLink to="#contact" className="">Contact</NavLink>
+                                <a href="#contact" className="">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="">
-                    <a className="btn btn-ghost md:text-lg lg:text-xl xl:text-2xl text-primary hover:bg-[#edfdfd]">
+                    <Link to="/" className="btn btn-ghost md:text-lg lg:text-xl xl:text-2xl text-primary hover:bg-[#edfdfd] hover:shadow-xs hover:shadow-secondary">
                         IEEE BranchFest 2025
-                    </a>
+                    </Link>
                 </div>
                 <div className="">
                     {/* <button className="btn btn-ghost btn-circle">
@@ -102,7 +108,7 @@ const NavBar = () => {
                             <span className="badge badge-xs badge-primary indicator-item"></span>
                         </div>
                     </button> */}
-                    <div className="hidden sm:gap-2 md:gap-4 sm:flex">
+                    <div className="hidden sm:gap-2 md:gap-3 sm:flex">
                         <button className="btn btn-secondary btn-sm md:btn-md text-white hover:text-white">Register</button>
                     <button className="btn btn-accent btn-sm md:btn-md text-white hover:text-white">Sponsor</button>
                     </div>
