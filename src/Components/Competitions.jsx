@@ -18,59 +18,93 @@ const Competitions = () => {
             image: poster_presentation,
             description:
                 "Present your research findings through creative posters and compete for academic excellence awards.",
+            registrationDeadline: "2025-02-20",
+            rulebookLink:
+                "https://example.com/rulebook/poster-presentation.pdf",
+            registrationLink:
+                "https://example.com/register/poster-presentation",
         },
         {
             title: "Digital Art Contest",
             image: digital_art_contest,
             description:
                 "Showcase your artistic talents in an open-themed competition for graphic designers and digital artists.",
+            registrationDeadline: "2025-02-18",
+            rulebookLink: "https://example.com/rulebook/digital-art.pdf",
+            registrationLink: "https://example.com/register/digital-art",
         },
         {
             title: "Design-A-Thon",
             image: design_a_thon,
             description:
                 "24-hour intensive design competition to solve real-world problems through innovative solutions.",
+            registrationDeadline: "2025-02-22",
+            rulebookLink: "https://example.com/rulebook/design-a-thon.pdf",
+            registrationLink: "https://example.com/register/design-a-thon",
         },
         {
             title: "Ad Making Competition",
             image: ad_making_competition,
             description:
                 "Create compelling advertisements around given themes and showcase your marketing creativity.",
+            registrationDeadline: "2025-02-19",
+            rulebookLink: "https://example.com/rulebook/ad-making.pdf",
+            registrationLink: "https://example.com/register/ad-making",
         },
         {
             title: "IT Quiz",
             image: it_quiz,
             description:
                 "Test your knowledge in information technology through challenging quiz competition for tech enthusiasts.",
+            registrationDeadline: "2025-02-17",
+            rulebookLink: "https://example.com/rulebook/it-quiz.pdf",
+            registrationLink: "https://example.com/register/it-quiz",
         },
         {
             title: "Tech Reels Competition",
             image: tech_reels_competition,
             description:
                 "Create engaging short videos explaining tech concepts in innovative ways for social media platforms.",
+            registrationDeadline: "2025-02-21",
+            rulebookLink: "https://example.com/rulebook/tech-reels.pdf",
+            registrationLink: "https://example.com/register/tech-reels",
         },
         {
             title: "IT Business Idea",
             image: it_business_idea,
             description:
                 "Pitch sustainable IT business ideas to address real-world challenges and shape the future of technology.",
+            registrationDeadline: "2025-02-23",
+            rulebookLink: "https://example.com/rulebook/it-business-idea.pdf",
+            registrationLink: "https://example.com/register/it-business-idea",
         },
         {
             title: "Abstract Submission",
             image: abstract_submission,
             description:
                 "Submit abstracts to experts for evaluation of originality and impact.",
+            registrationDeadline: "2025-02-15",
+            rulebookLink:
+                "https://example.com/rulebook/abstract-submission.pdf",
+            registrationLink:
+                "https://example.com/register/abstract-submission",
         },
         {
             title: "Ethical Case Solving",
             image: ethical_case_solving,
             description:
                 "Analyze real-world IT dilemmas and propose ethical solutions aligned with the IEEE code of ethics.",
+            registrationDeadline: "2025-02-24",
+            rulebookLink: "https://example.com/rulebook/ethical-case.pdf",
+            registrationLink: "https://example.com/register/ethical-case",
         },
     ];
 
     return (
-        <section id="competitions" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden">
+        <section
+            id="competitions"
+            className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden"
+        >
             <div className="w-11/12 md:container mx-auto">
                 {/* Background tech grid */}
 
