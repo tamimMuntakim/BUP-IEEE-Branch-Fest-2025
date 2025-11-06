@@ -38,7 +38,7 @@ const BlogPage = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(138,43,226,0.1),transparent_70%)]"></div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <h2 className="text-center text-4xl font-bold mb-12 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">
+                <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-linear-to-r/hsl from-sky-600 to-emerald-400 text-center mb-12">
                     Company Blogs & Announcements
                 </h2>
 

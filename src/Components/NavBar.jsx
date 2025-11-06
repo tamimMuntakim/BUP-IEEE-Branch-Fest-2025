@@ -1,7 +1,7 @@
 import React from "react";
 import { MdOutlineMenuOpen } from "react-icons/md";
-import { Link, NavLink } from "react-router";
-import "./NavBar.css"
+import { Link, NavLink } from "react-router"; // IMPORTANT: Ensure Link is used
+import "./NavBar.css";
 import { MdAddCircle } from "react-icons/md";
 import { FaMoneyBill } from "react-icons/fa";
 
@@ -16,103 +16,77 @@ const NavBar = () => {
                             role="button"
                             className="btn btn-ghost btn-circle md:text-base lg:text-lg xl:text-2xl"
                         >
-                            {/* <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                {" "}
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h16M4 18h7"
-                                />{" "}
-                            </svg> */}
-                            <MdOutlineMenuOpen className="font-extrabold text-secondary"></MdOutlineMenuOpen>
+                            <MdOutlineMenuOpen className="font-extrabold text-teal-400"></MdOutlineMenuOpen>
                         </div>
                         <ul
                             tabIndex="-1"
                             className="menu menu-md lg:menu-xl dropdown-content bg-[#edfdfd] rounded-box z-1 mt-3 w-36 md:w-56 p-2 shadow "
                         >
                             <li>
-                                <NavLink to="/" className="nav-links">Home</NavLink>
+                                <NavLink to="/" className="nav-links">
+                                    Home
+                                </NavLink>
+                            </li>
+                            {/* NOTE: CHANGED <a> to <Link> for correct routing */}
+                            <li>
+                                <Link to="/#about" className="">
+                                    About
+                                </Link>
                             </li>
                             <li>
-                                <a href="#about" className="">About</a>
+                                <Link to="/#competitions" className="">
+                                    Competitions
+                                </Link>
                             </li>
                             <li>
-                                <a href="#competitions" className="">Competitions</a>
+                                <Link to="/#job-fair" className="">
+                                    Job Fair
+                                </Link>
                             </li>
                             <li>
-                                <a href="#job-fair" className="">Job Fair</a>
+                                <Link to="/#partner-with-us" className="">
+                                    Sponsor
+                                </Link>
                             </li>
                             <li>
-                                <a href="#partner-with-us" className="">Sponsor</a>
+                                <Link to="/#partners" className="">
+                                    Estimated Partners
+                                </Link>
                             </li>
                             <li>
-                                <a href="#partners" className="">Estimated Partners</a>
+                                <Link to="/#hall-of-fame" className="">
+                                    Hall of Fame
+                                </Link>
                             </li>
                             <li>
-                                <a href="#hall-of-fame" className="">Hall of Fame</a>
+                                <NavLink to="/blogs" className="nav-links">
+                                    Blogs
+                                </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/blogs" className="nav-links">Blogs</NavLink>
-                            </li>
-                            <li>
-                                <a href="#contact" className="">Contact</a>
+                                <Link to="/#contact" className="">
+                                    Contact
+                                </Link>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="">
-                    <Link to="/" className="btn btn-ghost md:text-lg lg:text-xl xl:text-2xl text-primary hover:bg-[#edfdfd] hover:shadow-xs hover:shadow-secondary">
+                    <Link
+                        to="/"
+                        className="btn btn-ghost text-lg lg:text-xl xl:text-2xl bg-gradient-to-r from-teal-400 to-sky-600 text-transparent bg-clip-text hover:bg-[#edfdfd] hover:shadow-sm hover:border-accent"
+                    >
                         IEEE BranchFest 2025
                     </Link>
                 </div>
                 <div className="">
-                    {/* <button className="btn btn-ghost btn-circle">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            {" "}
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                            />{" "}
-                        </svg>
-                    </button>
-                    <button className="btn btn-ghost btn-circle">
-                        <div className="indicator">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                {" "}
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                                />{" "}
-                            </svg>
-                            <span className="badge badge-xs badge-primary indicator-item"></span>
-                        </div>
-                    </button> */}
                     <div className="hidden sm:gap-2 md:gap-3 sm:flex">
-                        <button className="btn btn-secondary btn-sm md:btn-md text-white hover:text-white"><MdAddCircle></MdAddCircle> Register</button>
-                    <button className="btn btn-accent btn-sm md:btn-md text-white hover:text-white"><FaMoneyBill></FaMoneyBill> Sponsor</button>
+                        <button className="btn btn-secondary btn-sm md:btn-md text-white hover:text-white">
+                            <MdAddCircle /> Register
+                        </button>
+                        <button className="btn btn-accent btn-sm md:btn-md text-white hover:text-white">
+                            <FaMoneyBill /> Sponsor
+                        </button>
                     </div>
                 </div>
             </div>

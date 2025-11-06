@@ -49,6 +49,7 @@ const CompetitionCard = ({
 
     const handleOpenModal = () => {
         setIsOpen(true);
+        // Use a simple ID selector for the dialog
         document.getElementById(title.replace(/\s+/g, "_")).showModal();
     };
 
@@ -86,7 +87,7 @@ const CompetitionCard = ({
                         onClick={handleOpenModal}
                         className="mt-4 btn btn-outline btn-accent hover:text-white"
                     >
-                        <IoIosArrowDropdownCircle></IoIosArrowDropdownCircle>
+                        <IoIosArrowDropdownCircle />
                         Learn More
                     </button>
                 </div>
@@ -123,7 +124,7 @@ const CompetitionCard = ({
 
                             {registrationDeadline && (
                                 <p className="text-sm text-gray-400 mb-4 flex gap-1 items-center">
-                                    <FcAlarmClock></FcAlarmClock>
+                                    <FcAlarmClock />
                                     Registration Deadline:{" "}
                                     <span className="text-cyan-300">
                                         {formattedDate}
@@ -140,7 +141,7 @@ const CompetitionCard = ({
                                         rel="noopener noreferrer"
                                         className="btn-accent btn btn-sm md:btn-md text-white"
                                     >
-                                        <IoMdBookmarks></IoMdBookmarks>
+                                        <IoMdBookmarks />
                                         View Rulebook
                                     </a>
                                 )}
@@ -153,7 +154,7 @@ const CompetitionCard = ({
                                         rel="noopener noreferrer"
                                         className="btn-accent btn btn-sm md:btn-md btn-soft hover:text-white"
                                     >
-                                        <MdAddCircle></MdAddCircle>
+                                        <MdAddCircle />
                                         Register Now
                                     </a>
                                 ) : (
@@ -161,7 +162,7 @@ const CompetitionCard = ({
                                         disabled
                                         className="btn btn-sm md:btn-md cursor-not-allowed"
                                     >
-                                        <ImCross className="text-red-900"></ImCross>
+                                        <ImCross className="text-red-900" />
                                         Registration Closed
                                     </button>
                                 )}
@@ -178,6 +179,11 @@ const CompetitionCard = ({
                         </form>
                     </div>
                 </div>
+                
+                {/* 👈 CRITICAL ADDITION: Modal Backdrop for click-outside-to-close */}
+                <form method="dialog" className="modal-backdrop">
+                    <button>close</button>
+                </form>
             </dialog>
         </>
     );
