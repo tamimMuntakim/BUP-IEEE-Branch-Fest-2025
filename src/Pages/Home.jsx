@@ -7,6 +7,7 @@ import HallOfFame from "../Components/HallOfFame";
 import JobFair from "../Components/JobFair";
 import UnderConstruction from "../Components/UnderConstruction";
 import EstimatedPartners from "../Components/EstimatedPartners";
+import Contact from "../Components/Contact";
 
 
 
@@ -29,6 +30,7 @@ const Home = () => {
             <PartnerWithUs></PartnerWithUs>
             <EstimatedPartners></EstimatedPartners>
             <HallOfFame></HallOfFame>
+            <Contact></Contact>
         </div>
     );
 };
