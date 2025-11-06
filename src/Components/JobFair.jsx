@@ -22,7 +22,7 @@ const JobFair = () => {
     ];
 
     return (
-        <section className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden">
+        <section id="job-fair" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden">
             <div className="w-11/12 md:container mx-auto">
                 {/* Futuristic grid background - (Note: complex gradients can still be heavy) */}
                 <div className="absolute inset-0">
@@ -31,7 +31,7 @@ const JobFair = () => {
                     <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
                 </div>
 
-                <div className=" flex flex-col md:flex-row items-center gap-12 px-6 relative z-10">
+                <div className=" flex flex-col md:flex-row items-center gap-12 relative z-10">
                     {/* Left: Image Container - Set this as the GROUP for the hover effect */}
                     <div
                         className="relative w-full md:w-1/2 will-change-transform group" // <-- Added 'group'
@@ -48,10 +48,10 @@ const JobFair = () => {
 
                     {/* Right: Text and Points */}
                     <div className="w-full md:w-1/2 space-y-6 will-change-transform">
-                        <h2 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
+                        <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-linear-to-r/hsl from-teal-400 to-blue-600">
                             IEEE BranchFest 2025 Job Fair
                         </h2>
-                        <p className="text-gray-300 leading-relaxed text-lg">
+                        <p className="text-gray-300 leading-relaxed text-sm sm:text-lg">
                             The IEEE BranchFest 2025 Job Fair is where talent
                             meets opportunity. Designed to bridge the gap
                             between students and industries, it offers

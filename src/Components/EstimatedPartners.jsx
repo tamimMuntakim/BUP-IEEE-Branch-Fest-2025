@@ -26,7 +26,7 @@ const partnerLogos = [
 
 const EstimatedPartners = () => {
     return (
-        <section className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden">
+        <section id="partners" className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden">
             <div className="w-11/12 md:container mx-auto">
                 {/* Background glow */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(0,255,255,0.1),transparent_70%)]"></div>
@@ -34,7 +34,7 @@ const EstimatedPartners = () => {
 
                 <div className="px-6 relative z-10">
                     {/* Title: motion.h2 removed */}
-                    <h2 className="text-center text-4xl font-bold mb-12 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">
+                    <h2 className="text-center text-3xl sm:text-5xl md:text-6xl font-extrabold mb-12 bg-linear-to-r/hsl from-emerald-300 to-indigo-600 text-transparent bg-clip-text">
                         Our Estimated Partners
                     </h2>
 

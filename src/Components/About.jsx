@@ -14,7 +14,7 @@ const About = () => {
     ];
 
     return (
-        <section className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden">
+        <section id="about" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden">
             {/* Background tech grid */}
             <div className="w-11/12 md:container mx-auto">
                 <div className="absolute inset-0">
@@ -50,7 +50,7 @@ const About = () => {
                         <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-linear-to-r/hsl from-emerald-400 to-sky-600">
                             About IEEE BranchFest 2025
                         </h2>
-                        <p className="text-gray-300 leading-relaxed text-sm sm:text-lg">
+                        <p className="text-gray-300 leading-relaxed text-sm sm:text-lg md:text-justify">
                             IEEE BranchFest 2025 is the ultimate fusion of
                             innovation, technology, and collaboration — where
                             bright young minds from across the country gather to

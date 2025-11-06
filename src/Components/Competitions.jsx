@@ -70,7 +70,7 @@ const Competitions = () => {
     ];
 
     return (
-        <section className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden">
+        <section id="competitions" className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 overflow-hidden">
             <div className="w-11/12 md:container mx-auto">
                 {/* Background tech grid */}
 
@@ -81,12 +81,12 @@ const Competitions = () => {
                 </div>
 
                 {/* Title: Framer Motion removed */}
-                <h2 className="text-center text-4xl md:text-5xl font-extrabold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 relative z-10">
+                <h2 className="text-center text-3xl sm:text-5xl md:text-6xl font-extrabold mb-12 bg-clip-text text-transparent  bg-linear-to-r/hsl from-blue-600 to-emerald-400 relative z-10">
                     Competitions at IEEE BranchFest 2025
                 </h2>
 
                 {/* Competition Grid */}
-                <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 relative z-10">
+                <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
                     {competitions.map((comp, index) => (
                         <CompetitionCard key={index} {...comp} />
                     ))}
