@@ -7,7 +7,7 @@ const HomeLayout = () => {
     return (
         <>
             <header className="bg-gradient-to-b from-black via-gray-900 to-black shadow-sm md:shadow-md shadow-secondary sticky top-0 z-50">
-                <nav className="sm:w-11/12 mx-1 md:container sm:mx-auto">
+                <nav className="w-11/12 md:container mx-auto">
                     <NavBar></NavBar>
                 </nav>
             </header>
