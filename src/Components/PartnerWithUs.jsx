@@ -32,8 +32,8 @@ const tiers = [
     },
     {
         name: "Silver",
-        gradient: "from-[#c0c0c0] via-[#808080] to-[#a9a9a9]",
-        glow: "shadow-[0_0_25px_#c0c0c0]",
+        gradient: "from-slate-300 via-slate-400 to-gray-400",
+        glow: "shadow-[0_0_25px_#d0d0d0]",
         description:
             "Ideal for emerging companies looking to connect with innovators and tech enthusiasts.",
         benefits: [
