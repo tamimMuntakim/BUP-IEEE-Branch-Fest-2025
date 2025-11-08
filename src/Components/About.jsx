@@ -14,7 +14,7 @@ const About = () => {
 
         { label: "Companies", value: "25+" },
 
-        { label: "Budget", value: "$50K+" },
+        // { label: "Budget", value: "$50K+" },
     ];
 
     return (
