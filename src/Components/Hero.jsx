@@ -41,15 +41,15 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="relative flex flex-col items-center justify-center min-h-[90vh] bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden ">
+        <section className="relative flex flex-col items-center justify-center min-h-[80vh] bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden ">
             {/* Techy animated background lines */}
             <div className="w-11/12 md:container mx-auto">
                 <div className="absolute inset-0">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.1),transparent_70%)]"></div>
 
-                    <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
+                    <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] opacity-90"></div>
 
-                    <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] opacity-10"></div>
+                    <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] opacity-90"></div>
                 </div>
 
                 {/* Animated Title */}
@@ -126,7 +126,7 @@ const Hero = () => {
 
                 {/* Decorative moving lines */}
 
-                <motion.div
+                {/* <motion.div
                     animate={{ x: [0, 100, 0] }}
                     transition={{ duration: 8, repeat: Infinity }}
                     viewport={{ once: true }}
@@ -138,7 +138,7 @@ const Hero = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 10, repeat: Infinity }}
                     className="absolute bottom-1/3 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"
-                ></motion.div>
+                ></motion.div> */}
             </div>
         </section>
     );

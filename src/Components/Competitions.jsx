@@ -8,7 +8,7 @@ import ad_making_competition from "../assets/Photos/ad_making_resized.jpg";
 import it_quiz from "../assets/Photos/it_quiz_resized.JPG";
 import it_business_idea from "../assets/Photos/it_business_resized.JPG";
 import abstract_submission from "../assets/Photos/abstract_submission_resized.jpg";
-import tech_reels_competition from "../assets/Photos/reel_resized.JPG";
+import tech_reels_competition from "../assets/Photos/reel_resized.png";
 import ethical_case_solving from "../assets/Photos/ethical_case_resized.jpg";
 import logo_design from "../assets/Photos/logo_design.png"
 
