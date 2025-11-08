@@ -161,6 +161,7 @@ const PartnerWithUs = () => {
                         popup: "border border-gray-700",
                     },
                 });
+                document.getElementById("sponsorship-modal").close();
             }
         } catch (error) {
             console.error("Fetch error:", error);
@@ -174,6 +175,7 @@ const PartnerWithUs = () => {
                     popup: "border border-gray-700",
                 },
             });
+            document.getElementById("sponsorship-modal").close();
         } finally {
             setSubmitting(false);
         }
@@ -365,7 +367,10 @@ const PartnerWithUs = () => {
 
                         {/* Submit Button */}
                         <div className="">
-                            <p className="text-xs md:text-sm text-yellow-300">*** Want to attach a file? Kindly include the drive link in your message.</p>
+                            <p className="text-xs md:text-sm text-yellow-300">
+                                *** Want to attach a file? Kindly include the
+                                drive link in your message.
+                            </p>
                             {/* Removed results.message display as SweetAlert now handles feedback */}
                         </div>
 
