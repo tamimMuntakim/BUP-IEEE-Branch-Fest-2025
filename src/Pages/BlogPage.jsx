@@ -1,11 +1,12 @@
 import BlogCard from "../Components/BlogCard";
+import sponsor_blogs_img from "../assets/Photos/sponsor_blogs.png";
 
 const BlogPage = () => {
     const blogs = [
         {
             id: 1,
             title: "Tech Innovators Ltd. Joins as Platinum Partner",
-            image: "Assets/Companies/tech_innovators.jpg",
+            image: sponsor_blogs_img,
             excerpt:
                 "Tech Innovators Ltd. joins IEEE BranchFest 2025 as our Platinum Partner, bringing expertise in AI-driven solutions and IoT integration.",
             content:
@@ -14,7 +15,7 @@ const BlogPage = () => {
         {
             id: 2,
             title: "RoboTech Solutions to Host Robotics Challenge",
-            image: "Assets/Companies/robotics.jpg",
+            image: sponsor_blogs_img,
             excerpt:
                 "RoboTech Solutions will host an interactive Robotics Challenge at BranchFest, offering hands-on exposure to modern automation.",
             content:
@@ -23,7 +24,7 @@ const BlogPage = () => {
         {
             id: 3,
             title: "DataSoft Bangladesh Signs Collaboration Agreement",
-            image: "Assets/Companies/datasoft.jpg",
+            image: sponsor_blogs_img,
             excerpt:
                 "DataSoft Bangladesh has entered a collaboration agreement with IEEE BUP Student Branch to promote smart innovation at BranchFest.",
             content:

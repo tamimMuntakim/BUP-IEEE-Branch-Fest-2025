@@ -3,6 +3,7 @@ import { MdOutlineMenuOpen } from "react-icons/md";
 import { Link, NavLink } from "react-router"; // IMPORTANT: Ensure Link is used
 import "./NavBar.css";
 import { FaMoneyBill, FaFacebookSquare } from "react-icons/fa";
+import { PiBookOpenTextBold } from "react-icons/pi";
 
 const NavBar = () => {
     return (
@@ -94,10 +95,10 @@ const NavBar = () => {
                             <FaFacebookSquare />
                         </Link>
                         <Link
-                            to="/#partner-with-us"
+                            to="/blogs"
                             className="btn btn-accent btn-sm md:btn-md text-white hover:text-white hidden sm:flex"
                         >
-                            <FaMoneyBill /> Sponsor
+                            <PiBookOpenTextBold  /> Blogs
                         </Link>
                     </div>
                 </div>

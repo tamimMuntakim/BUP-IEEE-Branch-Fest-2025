@@ -3,7 +3,12 @@ import React, { useState, useEffect } from "react";
 // Updated to be an array of updates. The component will now cycle through all items.
 const latestUpdateData = [
     {
-        news: "Deadline Extended by 3 Days for Logo Design Contest! New Deadline: November 8th, 2025 (11:59 PM BST)",
+        news: "Become a Campus Ambassador for IEEE BranchFest 2025. Deadline: November 12th, 2025",
+        redirect_to: "https://forms.gle/LUmYJGWcqtswAzNg6",
+        redirecting_text: "Apply Now",
+    },
+    {
+        news: "1 day Left for Logo Design Contest! Deadline: November 8th, 2025 (11:59 PM BST)",
         redirect_to: "https://forms.gle/NY5cAt8zL5YjJdv99",
         redirecting_text: "Submit Now",
     },
@@ -56,7 +61,7 @@ const LatestUpdate = () => {
         if (totalUpdates > 1) {
             const interval = setInterval(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % totalUpdates);
-            }, 5000); // Rotate every 5 seconds
+            }, 7000); // Rotate every 5 seconds
 
             // Cleanup function to clear the interval when the component unmounts
             return () => clearInterval(interval);

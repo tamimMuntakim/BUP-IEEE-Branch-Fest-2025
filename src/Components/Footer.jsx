@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
 
                     {/* Center Section - Socials */}
-                    <div className="flex items-center justify-center gap-6">
+                    {/* <div className="flex items-center justify-center gap-6">
                         <a
                             href="https://facebook.com"
                             target="_blank"
@@ -47,7 +47,7 @@ const Footer = () => {
                         >
                             <Linkedin className="h-5 w-5" />
                         </a>
-                    </div>
+                    </div> */}
 
                     {/* Right Section */}
 
