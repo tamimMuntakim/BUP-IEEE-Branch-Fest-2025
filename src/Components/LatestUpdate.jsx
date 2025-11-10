@@ -7,11 +7,11 @@ const latestUpdateData = [
         redirect_to: "https://forms.gle/LUmYJGWcqtswAzNg6",
         redirecting_text: "Apply Now",
     },
-    {
-        news: "1 day Left for Logo Design Contest! Deadline: November 8th, 2025 (11:59 PM BST)",
-        redirect_to: "https://forms.gle/NY5cAt8zL5YjJdv99",
-        redirecting_text: "Submit Now",
-    },
+    // {
+    //     news: "1 day Left for Logo Design Contest! Deadline: November 8th, 2025 (11:59 PM BST)",
+    //     redirect_to: "https://forms.gle/NY5cAt8zL5YjJdv99",
+    //     redirecting_text: "Submit Now",
+    // },
     // {
     //     news: "Keynote speaker announcement: Dr. Anya Sharma, CEO of TechCorp, will open the event.",
     //     redirect_to: "#speakers",
