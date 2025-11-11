@@ -3,6 +3,12 @@ import React, { useState, useEffect } from "react";
 // Updated to be an array of updates. The component will now cycle through all items.
 const latestUpdateData = [
     {
+        news: "Call for Poster Designs! Deadline: November 16th, 2025",
+        redirect_to:
+            "https://docs.google.com/forms/d/e/1FAIpQLSdNuHmexGpYdbK17mq7bztjpvCZs-TXdvY9Fidj20Ccnf3OrA/viewform",
+        redirecting_text: "Register Now",
+    },
+    {
         news: "Call for Abstracts! Deadline: November 16th, 2025",
         redirect_to: "https://forms.gle/RherQjZowWSEGFJUA",
         redirecting_text: "Register Now",
@@ -79,7 +85,7 @@ const LatestUpdate = () => {
 
     // Apply conditional padding: only add sm:pr-16 if we have more than one update (and thus dots)
     const containerClasses = `w-11/12 md:container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center sm:justify-between relative z-10 ${
-        totalUpdates > 1 ? "sm:pr-16" : ""
+        totalUpdates > 1 ? "sm:pr-4" : ""
     }`;
 
     return (
@@ -100,35 +106,37 @@ const LatestUpdate = () => {
                 </p>
 
                 {/* Call-to-Action Link */}
-                <a
-                    href={redirect_to}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-xs md:btn-sm btn-secondary btn-soft hover:text-white"
-                >
-                    {redirecting_text}
-                    <ExternalLinkIcon className="ml-2 h-2.5 w-2.5" />
-                </a>
+                <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
+                    <a
+                        href={redirect_to}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-xs md:btn-sm btn-secondary btn-soft hover:text-white"
+                    >
+                        {redirecting_text}
+                        <ExternalLinkIcon className="ml-2 h-2.5 w-2.5" />
+                    </a>
 
-                {/* Navigation Dots (Only rendered if totalUpdates > 1) */}
-                {totalUpdates > 1 && (
-                    <div className="hidden sm:flex absolute right-4 top-1/2 transform -translate-y-1/2 space-x-1">
-                        {latestUpdateData.map((_, index) => (
-                            <div
-                                key={index}
-                                className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                                    index === currentIndex
-                                        ? "bg-cyan-400 w-3"
-                                        : "bg-gray-600 hover:bg-gray-400"
-                                }`}
-                                // Allow manual change on click
-                                onClick={() => setCurrentIndex(index)}
-                                role="button"
-                                aria-label={`View update ${index + 1}`}
-                            ></div>
-                        ))}
-                    </div>
-                )}
+                    {/* Navigation Dots (Only rendered if totalUpdates > 1) */}
+                    {totalUpdates > 1 && (
+                        <div className="flex transform -translate-y-1/2 space-x-1">
+                            {latestUpdateData.map((_, index) => (
+                                <div
+                                    key={index}
+                                    className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                                        index === currentIndex
+                                            ? "bg-cyan-400 w-3"
+                                            : "bg-gray-600 hover:bg-gray-400"
+                                    }`}
+                                    // Allow manual change on click
+                                    onClick={() => setCurrentIndex(index)}
+                                    role="button"
+                                    aria-label={`View update ${index + 1}`}
+                                ></div>
+                            ))}
+                        </div>
+                    )}
+                </div>
             </div>
 
             {/* Custom Tailwind keyframes for animation */}

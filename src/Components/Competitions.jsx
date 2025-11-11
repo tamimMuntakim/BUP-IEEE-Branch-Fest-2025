@@ -1,7 +1,7 @@
 import React from "react";
 import CompetitionCard from "./CompetitionCard";
 
-import poster_presentation from "../assets/Photos/poster_persentation_resized.JPG";
+import poster_presentation from "../assets/Photos/poster_persentation_resized.png";
 import digital_art_contest from "../assets/Photos/digital_art_resized.jpg";
 import design_a_thon from "../assets/Photos/design_a_thron_resized.jpg";
 import ad_making_competition from "../assets/Photos/ad_making_resized.jpg";
@@ -29,12 +29,12 @@ const Competitions = () => {
             title: "Poster Presentation",
             image: poster_presentation,
             description:
-                "Present your research findings through creative posters and compete for academic excellence awards.",
-            registrationDeadline: "2025-02-20",
+                "The Research Poster Presentation is a signature event of IEEE Branch Fest 2025, organized by the IEEE BUP Student Branch. It is a platform to visually showcase cutting edge innovation in science, engineering. and technologies, where participants present their innovative ideas and demonstrate their research excellence through engaging poste displays. This competition provides an exciting opportunity for students to showcase their research innovations and ideas through visually engaging poster presentations. The event aims to promote scientific communication, critical thinking, an collaboration among young researchers. The scope of Research may include Healthcare, Education, Business, Agriculture, Industry, Smart City.",
+            registrationDeadline: "2025-11-16",
             rulebookLink:
-                "https://example.com/rulebook/poster-presentation.pdf",
+                "https://drive.google.com/file/d/1nV86Dpwuk0sfsYjiirpZ4T0-_ZQ6zYAu/view",
             registrationLink:
-                "https://example.com/register/poster-presentation",
+                "https://docs.google.com/forms/d/e/1FAIpQLSdNuHmexGpYdbK17mq7bztjpvCZs-TXdvY9Fidj20Ccnf3OrA/viewform",
         },
         {
             title: "Digital Art Contest",
