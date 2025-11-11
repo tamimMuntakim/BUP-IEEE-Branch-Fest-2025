@@ -10,7 +10,7 @@ import it_business_idea from "../assets/Photos/it_business_resized.JPG";
 import abstract_submission from "../assets/Photos/abstract_submission_resized.png";
 import tech_reels_competition from "../assets/Photos/reel_resized.png";
 import ethical_case_solving from "../assets/Photos/ethical_case_resized.jpg";
-import logo_design from "../assets/Photos/logo_design.png";
+// import logo_design from "../assets/Photos/logo_design.png";
 
 const Competitions = () => {
     const competitions = [
@@ -93,7 +93,7 @@ const Competitions = () => {
         {
             title: "Abstract Submission",
             image: abstract_submission,
-            description: `The Abstract Submission Competition is a flagship segment of IEEE BranchFest 2025, designedto showcase innovative research ideas and real-world applications of Artificial Intelligence (AI). Organized under the IEEE BUP Student Branch, this event encourages creative thinking,problem-solving, and collaboration among students and professionals across Bangladesh. The competition consists of two rounds: Online Qualifier and On-Site Final`,
+            description: `The Abstract Submission Competition is a flagship segment of IEEE BranchFest 2025, designed to showcase innovative research ideas and real-world applications of Artificial Intelligence (AI). Organized under the IEEE BUP Student Branch, this event encourages creative thinking, problem-solving and collaboration among students and professionals across Bangladesh. The competition consists of two rounds: Online Qualifier and On-Site Final`,
             registrationDeadline: "2025-11-16",
             rulebookLink:
                 "https://drive.google.com/file/d/1N_pVaiNIFz0l1_UIj-jcr889Z6mVVBFC/view?usp=drive_link",
