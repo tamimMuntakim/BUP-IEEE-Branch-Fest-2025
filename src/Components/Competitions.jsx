@@ -8,7 +8,7 @@ import ad_making_competition from "../assets/Photos/ad_making_resized.jpg";
 import it_quiz from "../assets/Photos/it_quiz_resized.JPG";
 import it_business_idea from "../assets/Photos/it_business_resized.JPG";
 import abstract_submission from "../assets/Photos/abstract_submission_resized.png";
-import tech_reels_competition from "../assets/Photos/reel_resized.png";
+import tech_reels_competition from "../assets/Photos/tech_reels_resized.png";
 import ethical_case_solving from "../assets/Photos/ethical_case_resized.jpg";
 // import logo_design from "../assets/Photos/logo_design.png";
 
@@ -76,10 +76,11 @@ const Competitions = () => {
             title: "Tech Reels Competition",
             image: tech_reels_competition,
             description:
-                "Create engaging short videos explaining tech concepts in innovative ways for social media platforms.",
-            registrationDeadline: "2025-02-21",
-            rulebookLink: "https://example.com/rulebook/tech-reels.pdf",
-            registrationLink: "https://example.com/register/tech-reels",
+                "Tech-Reels is an online short video competition where participants creatively express their passion for technology. Judging is based solely on public engagement metrics, with organizer oversight to ensure content adherence.",
+            registrationDeadline: "2025-11-20",
+            rulebookLink:
+                "https://drive.google.com/file/d/1mV8i3ufm-gaSHzgF8tHCnRWxipihfvsx/view?usp=sharing",
+            registrationLink: "https://forms.gle/fJUqsZFqBsgVYqk77",
         },
         {
             title: "IT Business Idea",
