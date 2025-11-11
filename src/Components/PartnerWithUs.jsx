@@ -410,7 +410,7 @@ const PartnerWithUs = () => {
 const App = () => {
     // Basic dark theme wrapper for aesthetics
     return (
-        <div className="min-h-screen bg-gray-950 text-gray-100 font-sans">
+        <div className="bg-gray-950 text-gray-100 font-sans">
             <div className="">
                 <PartnerWithUs />
             </div>
