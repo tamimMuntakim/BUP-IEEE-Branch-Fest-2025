@@ -3,6 +3,12 @@ import React, { useState, useEffect } from "react";
 // Updated to be an array of updates. The component will now cycle through all items.
 const latestUpdateData = [
     {
+        news: "“DESIGN-A-THON” powered by Ostad! Deadline: November 18th, 2025",
+        redirect_to:
+            "https://forms.gle/uh2Yfus7ipsH68GF9",
+        redirecting_text: "Register Now",
+    },
+    {
         news: "Make tech reels, win hearts! Deadline: November 20th, 2025",
         redirect_to:
             "https://forms.gle/fJUqsZFqBsgVYqk77",
@@ -19,11 +25,11 @@ const latestUpdateData = [
         redirect_to: "https://forms.gle/RherQjZowWSEGFJUA",
         redirecting_text: "Register Now",
     },
-    {
-        news: "Become a Campus Ambassador for IEEE BranchFest 2025! Deadline: November 12th, 2025",
-        redirect_to: "https://forms.gle/LUmYJGWcqtswAzNg6",
-        redirecting_text: "Apply Now",
-    },
+    // {
+    //     news: "Become a Campus Ambassador for IEEE BranchFest 2025! Deadline: November 12th, 2025",
+    //     redirect_to: "https://forms.gle/LUmYJGWcqtswAzNg6",
+    //     redirecting_text: "Apply Now",
+    // },
     // {
     //     news: "1 day Left for Logo Design Contest! Deadline: November 8th, 2025 (11:59 PM BST)",
     //     redirect_to: "https://forms.gle/NY5cAt8zL5YjJdv99",

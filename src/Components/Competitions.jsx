@@ -3,7 +3,7 @@ import CompetitionCard from "./CompetitionCard";
 
 import poster_presentation from "../assets/Photos/poster_persentation_resized.png";
 import digital_art_contest from "../assets/Photos/digital_art_resized.jpg";
-import design_a_thon from "../assets/Photos/design_a_thron_resized.jpg";
+import design_a_thon from "../assets/Photos/design_a_thron_resized.png";
 import ad_making_competition from "../assets/Photos/ad_making_resized.jpg";
 import it_quiz from "../assets/Photos/it_quiz_resized.JPG";
 import it_business_idea from "../assets/Photos/it_business_resized.JPG";
@@ -49,10 +49,11 @@ const Competitions = () => {
             title: "Design-A-Thon",
             image: design_a_thon,
             description:
-                "24-hour intensive design competition to solve real-world problems through innovative solutions.",
-            registrationDeadline: "2025-12-22",
-            rulebookLink: "https://example.com/rulebook/design-a-thon.pdf",
-            registrationLink: "https://example.com/register/design-a-thon",
+                "The IEEE BranchFest 2025 “Design-A-Thon” is a UI/UX design competition organized by the IEEE BUP SB WIE Affinity Group. It challenges creative minds to analyze, design, and present innovative digital solutions to real-world problems, testing participants' creativity, empathy, and design thinking. The competition consists of two rounds: Online Qualifier (Critique & Redesign) and On-Site Final (5-Hour Design Challenge).",
+            registrationDeadline: "2025-11-18",
+            rulebookLink:
+                "https://drive.google.com/file/d/1Oc3lKiCEZPGir49zItxtaibR-MHQLip7/view?usp=sharing",
+            registrationLink: "https://forms.gle/uh2Yfus7ipsH68GF9",
         },
         {
             title: "Ad Making Competition",

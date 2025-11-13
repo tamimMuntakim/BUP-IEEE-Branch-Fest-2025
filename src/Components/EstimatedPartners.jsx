@@ -2,28 +2,32 @@ import React from "react";
 // Removed: import { motion } from "framer-motion";
 
 // Placeholder URL used to avoid compilation errors caused by local asset imports
-import partner1 from "../assets/Logo/basis.png";
-import partner2 from "../assets/Logo/bjit.png";
-import partner3 from "../assets/Logo/bkash.png";
-import partner4 from "../assets/Logo/brac.png";
-import partner5 from "../assets/Logo/daraz.png";
-import partner6 from "../assets/Logo/emk-padded.png";
-import partner7 from "../assets/Logo/gp.png";
-import partner8 from "../assets/Logo/ssl.jpeg";
-import partner9 from "../assets/Logo/trustbank.png";
-import partner10 from "../assets/Logo/github_education.png";
+// import partner1 from "../assets/Logo/basis.png";
+// import partner2 from "../assets/Logo/bjit.png";
+// import partner3 from "../assets/Logo/bkash.png";
+// import partner4 from "../assets/Logo/brac.png";
+// import partner5 from "../assets/Logo/daraz.png";
+// import partner6 from "../assets/Logo/emk-padded.png";
+// import partner7 from "../assets/Logo/gp.png";
+// import partner8 from "../assets/Logo/ssl.jpeg";
+// import partner9 from "../assets/Logo/trustbank.png";
+// import partner10 from "../assets/Logo/github_education.png";
+import github_education from "../assets/Logo/github_education.png";
+import ostad from "../assets/Logo/ostad.png";
 
 const partnerLogos = [
-    partner10,
-    partner1,
-    partner2,
-    partner3,
-    partner4,
-    partner5,
-    partner6,
-    partner7,
-    partner8,
-    partner9,
+    // partner10,
+    // partner1,
+    // partner2,
+    // partner3,
+    // partner4,
+    // partner5,
+    // partner6,
+    // partner7,
+    // partner8,
+    // partner9,
+    github_education,
+    ostad
 ];
 
 const EstimatedPartners = () => {
@@ -37,11 +41,11 @@ const EstimatedPartners = () => {
                 <div className="px-6 relative z-10">
                     {/* Title: motion.h2 removed */}
                     <h2 className="text-center text-3xl sm:text-5xl md:text-6xl font-extrabold mb-12 bg-linear-to-r/hsl from-emerald-300 to-indigo-600 text-transparent bg-clip-text">
-                        Our Estimated Partners
+                        Our Partners
                     </h2>
 
                     {/* Logos Grid Container: motion.div removed */}
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 items-center justify-items-center">
+                    <div className="flex flex-wrap gap-10 items-center justify-center">
                         {partnerLogos.map((logo, i) => (
                             // Individual Logo Card: motion.div removed. Added transition-transform duration-300 transform hover:scale-[1.08]
                             <div
