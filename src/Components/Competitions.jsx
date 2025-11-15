@@ -2,7 +2,7 @@ import React from "react";
 import CompetitionCard from "./CompetitionCard";
 
 import poster_presentation from "../assets/Photos/poster_persentation_resized.png";
-import digital_art_contest from "../assets/Photos/digital_art_resized.jpg";
+import digital_art_contest from "../assets/Photos/digital_art_resized.png";
 import design_a_thon from "../assets/Photos/design_a_thron_resized.png";
 import ad_making_competition from "../assets/Photos/ad_making_resized.jpg";
 import it_quiz from "../assets/Photos/it_quiz_resized.JPG";
@@ -40,10 +40,11 @@ const Competitions = () => {
             title: "Digital Art Contest",
             image: digital_art_contest,
             description:
-                "Showcase your artistic talents in an open-themed competition for graphic designers and digital artists.",
-            registrationDeadline: "2025-02-18",
-            rulebookLink: "https://example.com/rulebook/digital-art.pdf",
-            registrationLink: "https://example.com/register/digital-art",
+                "The Digital Art Competition is an event of IEEE Branch Fest 2025, organized by the IEEE BUP Student Branch. This competition invites students to showcase their creativity and technical prowess through digital artwork that celebrates the intersection of technology, engineering, and artistic expression.",
+            registrationDeadline: "2025-11-20",
+            rulebookLink:
+                "https://drive.google.com/file/d/17Gy7-J_Naao9Qjwqw0wFOB8sIHObvjoO/view?usp=sharing",
+            registrationLink: "https://forms.gle/teBaFm4U4gJZ3cYc6",
         },
         {
             title: "Design-A-Thon",
