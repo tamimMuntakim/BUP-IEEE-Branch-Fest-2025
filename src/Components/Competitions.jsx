@@ -5,7 +5,7 @@ import poster_presentation from "../assets/Photos/poster_persentation_resized.pn
 import digital_art_contest from "../assets/Photos/digital_art_resized.png";
 import design_a_thon from "../assets/Photos/design_a_thron_resized.png";
 import ad_making_competition from "../assets/Photos/ad_making_resized.jpg";
-import it_quiz from "../assets/Photos/it_quiz_resized.JPG";
+import it_quiz from "../assets/Photos/it_quiz_resized.png";
 import it_business_idea from "../assets/Photos/it_business_resized.JPG";
 import abstract_submission from "../assets/Photos/abstract_submission_resized.png";
 import tech_reels_competition from "../assets/Photos/tech_reels_resized.png";
@@ -66,13 +66,13 @@ const Competitions = () => {
             registrationLink: "https://example.com/register/ad-making",
         },
         {
-            title: "IT Quiz",
+            title: "IT Olympiad",
             image: it_quiz,
             description:
-                "Test your knowledge in information technology through challenging quiz competition for tech enthusiasts.",
-            registrationDeadline: "2025-02-17",
-            rulebookLink: "https://example.com/rulebook/it-quiz.pdf",
-            registrationLink: "https://example.com/register/it-quiz",
+                "The IT Olympiad challenges participants to showcase their grasp of fundamental and emerging concepts in Information Technology through a fast-paced, on-site written competition. Divisions: University and College (HSC Level).",
+            registrationDeadline: "2025-11-21",
+            rulebookLink: "https://drive.google.com/file/d/1JCFFmlG1DLl4lXP9ZWdDyGWermQknanb/view?usp=sharing",
+            registrationLink: "https://forms.gle/4De7DJX3fzRvAhPZ6",
         },
         {
             title: "Tech Reels Competition",

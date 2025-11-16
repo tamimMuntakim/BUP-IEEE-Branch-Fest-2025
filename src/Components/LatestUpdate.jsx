@@ -3,6 +3,23 @@ import React, { useState, useEffect } from "react";
 // Updated to be an array of updates. The component will now cycle through all items.
 const latestUpdateData = [
     {
+        news: "Put your IT knowledge to the ultimate test! Deadline: November 21st, 2025",
+        redirect_to:
+            "https://forms.gle/4De7DJX3fzRvAhPZ6",
+        redirecting_text: "Register Now",
+    },
+    {
+        news: "Deadline Extended for Poster Designs! Deadline: November 20th, 2025",
+        redirect_to:
+            "https://docs.google.com/forms/d/e/1FAIpQLSdNuHmexGpYdbK17mq7bztjpvCZs-TXdvY9Fidj20Ccnf3OrA/viewform",
+        redirecting_text: "Register Now",
+    },
+    {
+        news: "Deadline Extended for Abstracts! Deadline: November 20th, 2025",
+        redirect_to: "https://forms.gle/RherQjZowWSEGFJUA",
+        redirecting_text: "Register Now",
+    },
+    {
         news: "Unleash your creativity through digital arts! Deadline: November 20th, 2025",
         redirect_to:
             "https://forms.gle/teBaFm4U4gJZ3cYc6",
@@ -18,17 +35,6 @@ const latestUpdateData = [
         news: "Make tech reels, win hearts! Deadline: November 20th, 2025",
         redirect_to:
             "https://forms.gle/fJUqsZFqBsgVYqk77",
-        redirecting_text: "Register Now",
-    },
-    {
-        news: "Call for Poster Designs! Deadline: November 16th, 2025",
-        redirect_to:
-            "https://docs.google.com/forms/d/e/1FAIpQLSdNuHmexGpYdbK17mq7bztjpvCZs-TXdvY9Fidj20Ccnf3OrA/viewform",
-        redirecting_text: "Register Now",
-    },
-    {
-        news: "Call for Abstracts! Deadline: November 16th, 2025",
-        redirect_to: "https://forms.gle/RherQjZowWSEGFJUA",
         redirecting_text: "Register Now",
     },
     // {
