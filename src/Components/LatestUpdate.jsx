@@ -3,40 +3,36 @@ import React, { useState, useEffect } from "react";
 // Updated to be an array of updates. The component will now cycle through all items.
 const latestUpdateData = [
     {
-        news: "Put your IT knowledge to the ultimate test! Deadline: November 21st, 2025",
-        redirect_to:
-            "https://forms.gle/4De7DJX3fzRvAhPZ6",
-        redirecting_text: "Register Now",
-    },
-    {
-        news: "Deadline Extended for Poster Designs! Deadline: November 20th, 2025",
+        news: "Deadline Extended for Poster Designs! Deadline: November 22nd, 2025",
         redirect_to:
             "https://docs.google.com/forms/d/e/1FAIpQLSdNuHmexGpYdbK17mq7bztjpvCZs-TXdvY9Fidj20Ccnf3OrA/viewform",
         redirecting_text: "Register Now",
     },
     {
-        news: "Deadline Extended for Abstracts! Deadline: November 20th, 2025",
-        redirect_to: "https://forms.gle/RherQjZowWSEGFJUA",
+        news: "Deadline Extended for digital arts! Deadline: November 23rd, 2025",
+        redirect_to: "https://forms.gle/teBaFm4U4gJZ3cYc6",
         redirecting_text: "Register Now",
     },
     {
-        news: "Unleash your creativity through digital arts! Deadline: November 20th, 2025",
-        redirect_to:
-            "https://forms.gle/teBaFm4U4gJZ3cYc6",
+        news: "Syllabus updated for IT olympiad! Deadline: November 21st, 2025",
+        redirect_to: "https://forms.gle/4De7DJX3fzRvAhPZ6",
         redirecting_text: "Register Now",
     },
-    {
-        news: "“DESIGN-A-THON” powered by Ostad! Deadline: November 18th, 2025",
-        redirect_to:
-            "https://forms.gle/uh2Yfus7ipsH68GF9",
-        redirecting_text: "Register Now",
-    },
-    {
-        news: "Make tech reels, win hearts! Deadline: November 20th, 2025",
-        redirect_to:
-            "https://forms.gle/fJUqsZFqBsgVYqk77",
-        redirecting_text: "Register Now",
-    },
+    // {
+    //     news: "Deadline Extended for Abstracts! Deadline: November 20th, 2025",
+    //     redirect_to: "https://forms.gle/RherQjZowWSEGFJUA",
+    //     redirecting_text: "Register Now",
+    // },
+    // {
+    //     news: "“DESIGN-A-THON” powered by Ostad! Deadline: November 18th, 2025",
+    //     redirect_to: "https://forms.gle/uh2Yfus7ipsH68GF9",
+    //     redirecting_text: "Register Now",
+    // },
+    // {
+    //     news: "Make tech reels, win hearts! Deadline: November 20th, 2025",
+    //     redirect_to: "https://forms.gle/fJUqsZFqBsgVYqk77",
+    //     redirecting_text: "Register Now",
+    // },
     // {
     //     news: "Become a Campus Ambassador for IEEE BranchFest 2025! Deadline: November 12th, 2025",
     //     redirect_to: "https://forms.gle/LUmYJGWcqtswAzNg6",

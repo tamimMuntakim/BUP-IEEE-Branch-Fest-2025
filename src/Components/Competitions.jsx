@@ -30,7 +30,7 @@ const Competitions = () => {
             image: poster_presentation,
             description:
                 "The Research Poster Presentation is a signature event of IEEE Branch Fest 2025, organized by the IEEE BUP Student Branch. It is a platform to visually showcase cutting edge innovation in science, engineering. and technologies, where participants present their innovative ideas and demonstrate their research excellence through engaging poste displays. This competition provides an exciting opportunity for students to showcase their research innovations and ideas through visually engaging poster presentations. The event aims to promote scientific communication, critical thinking, an collaboration among young researchers. The scope of Research may include Healthcare, Education, Business, Agriculture, Industry, Smart City.",
-            registrationDeadline: "2025-11-16",
+            registrationDeadline: "2025-11-22",
             rulebookLink:
                 "https://drive.google.com/file/d/1nV86Dpwuk0sfsYjiirpZ4T0-_ZQ6zYAu/view",
             registrationLink:
@@ -41,7 +41,7 @@ const Competitions = () => {
             image: digital_art_contest,
             description:
                 "The Digital Art Competition is an event of IEEE Branch Fest 2025, organized by the IEEE BUP Student Branch. This competition invites students to showcase their creativity and technical prowess through digital artwork that celebrates the intersection of technology, engineering, and artistic expression.",
-            registrationDeadline: "2025-11-20",
+            registrationDeadline: "2025-11-23",
             rulebookLink:
                 "https://drive.google.com/file/d/17Gy7-J_Naao9Qjwqw0wFOB8sIHObvjoO/view?usp=sharing",
             registrationLink: "https://forms.gle/teBaFm4U4gJZ3cYc6",
@@ -97,7 +97,7 @@ const Competitions = () => {
             title: "Abstract Submission",
             image: abstract_submission,
             description: `The Abstract Submission Competition is a flagship segment of IEEE BranchFest 2025, designed to showcase innovative research ideas and real-world applications of Artificial Intelligence (AI). Organized under the IEEE BUP Student Branch, this event encourages creative thinking, problem-solving and collaboration among students and professionals across Bangladesh. The competition consists of two rounds: Online Qualifier and On-Site Final`,
-            registrationDeadline: "2025-11-16",
+            registrationDeadline: "2025-11-20",
             rulebookLink:
                 "https://drive.google.com/file/d/1N_pVaiNIFz0l1_UIj-jcr889Z6mVVBFC/view?usp=drive_link",
             registrationLink: "https://forms.gle/RherQjZowWSEGFJUA",
