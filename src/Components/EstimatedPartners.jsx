@@ -16,6 +16,8 @@ import radiant from "../assets/Logo/radiant.png";
 // import github_education from "../assets/Logo/github_education.png";
 import ap from "../assets/Logo/ap.png";
 import ostad from "../assets/Logo/ostad.png";
+import ingenious from "../assets/Logo/ingenious.jpeg";
+import health_care from "../assets/Logo/health_care.jpeg";
 
 const partnerLogos = [
     // partner10,
@@ -28,9 +30,11 @@ const partnerLogos = [
     // partner7,
     // partner8,
     // partner9,
-    ap,
     radiant,
+    ap,
     ostad,
+    health_care,
+    ingenious
     // github_education,
 ];
 

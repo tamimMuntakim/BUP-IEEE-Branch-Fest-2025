@@ -39,6 +39,24 @@ const BlogPage = () => {
             content:
                 "Aqua Paints, one of Bangladesh's leading paint and coating companies, has partnered with IEEE BranchFest 2025. Known for their high-quality and eco-friendly products, Aqua Paints aims to inspire young innovators and promote sustainable practices through this collaboration.",
         },
+        {
+            id: 5,
+            title: "Health Care Pharmaceuticals Sponsors IEEE BranchFest 2025",
+            image: sponsor_blogs_img,
+            excerpt:
+                "Health Care Pharmaceuticals joins IEEE BranchFest 2025 to support youth-driven innovation and scientific excellence.",
+            content:
+                "Health Care Pharmaceuticals Limited, a leading pharmaceutical manufacturer in Bangladesh, has partnered with IEEE BranchFest 2025. Through this sponsorship, the company aims to encourage young talents and promote advancements in science, technology, and healthcare innovation.",
+        },
+        {
+            id: 6,
+            title: "Ingenious Partners with IEEE BranchFest 2025",
+            image: sponsor_blogs_img,
+            excerpt:
+                "Ingenious Community collaborates with IEEE BranchFest 2025 to foster creativity, technology, and practical innovation.",
+            content:
+                "Ingenious, a growing name in technology and creative solutions, has joined as a sponsor for IEEE BranchFest 2025. The partnership aims to empower students with opportunities in innovation, problem-solving, and modern tech applications, contributing to a more impactful event experience.",
+        },
     ];
 
     return (
