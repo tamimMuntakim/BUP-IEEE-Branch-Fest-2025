@@ -30,6 +30,15 @@ const BlogPage = () => {
             content:
                 "DataSoft Bangladesh Limited, one of the country's premier software development companies, has signed an MoU with IEEE BUP Student Branch. The collaboration will enable workshops, mentorship programs, and project showcases focusing on sustainable technology and data-driven innovations.",
         },
+        {
+            id: 4,
+            title: "Aqua Paints Partners with IEEE BranchFest 2025",
+            image: sponsor_blogs_img,
+            excerpt:
+                "Aqua Paints has joined IEEE BranchFest 2025 as an official sponsor, supporting creativity and sustainable innovation.",
+            content:
+                "Aqua Paints, one of Bangladesh's leading paint and coating companies, has partnered with IEEE BranchFest 2025. Known for their high-quality and eco-friendly products, Aqua Paints aims to inspire young innovators and promote sustainable practices through this collaboration.",
+        },
     ];
 
     return (
