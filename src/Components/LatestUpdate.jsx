@@ -3,6 +3,12 @@ import React, { useState, useEffect } from "react";
 // Updated to be an array of updates. The component will now cycle through all items.
 const latestUpdateData = [
     {
+        news: "Deadline Extended for Tech Reels! Deadline: November 24th, 2025",
+        redirect_to:
+            "https://forms.gle/fJUqsZFqBsgVYqk77",
+        redirecting_text: "Register Now",
+    },
+    {
         news: "Deadline Extended for Poster Designs! Deadline: November 22nd, 2025",
         redirect_to:
             "https://docs.google.com/forms/d/e/1FAIpQLSdNuHmexGpYdbK17mq7bztjpvCZs-TXdvY9Fidj20Ccnf3OrA/viewform",

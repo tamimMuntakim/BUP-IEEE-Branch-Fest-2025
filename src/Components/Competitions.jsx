@@ -57,21 +57,13 @@ const Competitions = () => {
             registrationLink: "https://forms.gle/uh2Yfus7ipsH68GF9",
         },
         {
-            title: "Ad Making Competition",
-            image: ad_making_competition,
-            description:
-                "Create compelling advertisements around given themes and showcase your marketing creativity.",
-            registrationDeadline: "2025-02-19",
-            rulebookLink: "https://example.com/rulebook/ad-making.pdf",
-            registrationLink: "https://example.com/register/ad-making",
-        },
-        {
             title: "IT Olympiad",
             image: it_quiz,
             description:
                 "The IT Olympiad challenges participants to showcase their grasp of fundamental and emerging concepts in Information Technology through a fast-paced, on-site written competition. Divisions: University and College (HSC Level).",
             registrationDeadline: "2025-11-21",
-            rulebookLink: "https://drive.google.com/file/d/1JCFFmlG1DLl4lXP9ZWdDyGWermQknanb/view?usp=sharing",
+            rulebookLink:
+                "https://drive.google.com/file/d/1JCFFmlG1DLl4lXP9ZWdDyGWermQknanb/view?usp=sharing",
             registrationLink: "https://forms.gle/4De7DJX3fzRvAhPZ6",
         },
         {
@@ -79,19 +71,10 @@ const Competitions = () => {
             image: tech_reels_competition,
             description:
                 "Tech-Reels is an online short video competition where participants creatively express their passion for technology. Judging is based solely on public engagement metrics, with organizer oversight to ensure content adherence.",
-            registrationDeadline: "2025-11-20",
+            registrationDeadline: "2025-11-24",
             rulebookLink:
                 "https://drive.google.com/file/d/1mV8i3ufm-gaSHzgF8tHCnRWxipihfvsx/view?usp=sharing",
             registrationLink: "https://forms.gle/fJUqsZFqBsgVYqk77",
-        },
-        {
-            title: "IT Business Idea",
-            image: it_business_idea,
-            description:
-                "Pitch sustainable IT business ideas to address real-world challenges and shape the future of technology.",
-            registrationDeadline: "2025-02-23",
-            rulebookLink: "https://example.com/rulebook/it-business-idea.pdf",
-            registrationLink: "https://example.com/register/it-business-idea",
         },
         {
             title: "Abstract Submission",
@@ -101,6 +84,24 @@ const Competitions = () => {
             rulebookLink:
                 "https://drive.google.com/file/d/1N_pVaiNIFz0l1_UIj-jcr889Z6mVVBFC/view?usp=drive_link",
             registrationLink: "https://forms.gle/RherQjZowWSEGFJUA",
+        },
+        {
+            title: "Ad Making Competition",
+            image: ad_making_competition,
+            description:
+                "Create compelling advertisements around given themes and showcase your marketing creativity.",
+            registrationDeadline: "2025-02-19",
+            rulebookLink: "https://example.com/rulebook/ad-making.pdf",
+            registrationLink: "https://example.com/register/ad-making",
+        },
+        {
+            title: "IT Business Idea",
+            image: it_business_idea,
+            description:
+                "Pitch sustainable IT business ideas to address real-world challenges and shape the future of technology.",
+            registrationDeadline: "2025-02-23",
+            rulebookLink: "https://example.com/rulebook/it-business-idea.pdf",
+            registrationLink: "https://example.com/register/it-business-idea",
         },
         {
             title: "Ethical Case Solving",
