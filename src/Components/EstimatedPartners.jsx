@@ -14,7 +14,7 @@ import React from "react";
 // import partner10 from "../assets/Logo/github_education.png";
 import radiant from "../assets/Logo/radiant.png";
 // import github_education from "../assets/Logo/github_education.png";
-import ap from "../assets/Logo/ap.png";
+import ap from "../assets/Logo/Ap.png";
 import ostad from "../assets/Logo/ostad.png";
 import ingenious from "../assets/Logo/ingenious.jpeg";
 import health_care from "../assets/Logo/health_care.jpeg";
@@ -34,13 +34,16 @@ const partnerLogos = [
     ap,
     ostad,
     health_care,
-    ingenious
+    ingenious,
     // github_education,
 ];
 
 const EstimatedPartners = () => {
     return (
-        <section id="partners" className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden">
+        <section
+            id="partners"
+            className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden"
+        >
             <div className="w-11/12 md:container mx-auto">
                 {/* Background glow */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(0,255,255,0.1),transparent_70%)]"></div>
