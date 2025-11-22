@@ -25,11 +25,11 @@ const latestUpdateData = [
         redirect_to: "https://forms.gle/teBaFm4U4gJZ3cYc6",
         redirecting_text: "Register Now",
     },
-    {
-        news: "Syllabus updated for IT olympiad! Deadline: November 21st, 2025",
-        redirect_to: "https://forms.gle/4De7DJX3fzRvAhPZ6",
-        redirecting_text: "Register Now",
-    },
+    // {
+    //     news: "Syllabus updated for IT olympiad! Deadline: November 23rd, 2025",
+    //     redirect_to: "https://forms.gle/4De7DJX3fzRvAhPZ6",
+    //     redirecting_text: "Register Now",
+    // },
     // {
     //     news: "Deadline Extended for Abstracts! Deadline: November 20th, 2025",
     //     redirect_to: "https://forms.gle/RherQjZowWSEGFJUA",
