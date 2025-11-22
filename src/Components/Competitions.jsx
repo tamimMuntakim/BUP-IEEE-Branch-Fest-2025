@@ -61,7 +61,7 @@ const Competitions = () => {
             image: it_quiz,
             description:
                 "The IT Olympiad challenges participants to showcase their grasp of fundamental and emerging concepts in Information Technology through a fast-paced, on-site written competition. Divisions: University and College (HSC Level).",
-            registrationDeadline: "2025-11-21",
+            registrationDeadline: "2025-11-23",
             rulebookLink:
                 "https://drive.google.com/file/d/1JCFFmlG1DLl4lXP9ZWdDyGWermQknanb/view?usp=sharing",
             registrationLink: "https://forms.gle/4De7DJX3fzRvAhPZ6",

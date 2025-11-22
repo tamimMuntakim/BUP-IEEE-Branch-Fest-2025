@@ -13,11 +13,12 @@ import React from "react";
 // import partner9 from "../assets/Logo/trustbank.png";
 // import partner10 from "../assets/Logo/github_education.png";
 import radiant from "../assets/Logo/radiant.png";
-// import github_education from "../assets/Logo/github_education.png";
+import github_education from "../assets/Logo/github_education.png";
 import ap from "../assets/Logo/Ap.png";
 import ostad from "../assets/Logo/ostad.png";
 import ingenious from "../assets/Logo/ingenious.jpeg";
 import health_care from "../assets/Logo/health_care.jpeg";
+import ysse from "../assets/Logo/ysse.jpg";
 
 const partnerLogos = [
     // partner10,
@@ -35,7 +36,8 @@ const partnerLogos = [
     ostad,
     health_care,
     ingenious,
-    // github_education,
+    ysse,
+    github_education,
 ];
 
 const EstimatedPartners = () => {
