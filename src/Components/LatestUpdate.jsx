@@ -5,7 +5,13 @@ const latestUpdateData = [
     {
         news: "Deadline Extended for IT olympiad! Deadline: November 23rd, 2025",
         redirect_to:
-            " https://forms.gle/4De7DJX3fzRvAhPZ6",
+            "https://forms.gle/4De7DJX3fzRvAhPZ6",
+        redirecting_text: "Register Now",
+    },
+    {
+        news: "Deadline Extended for Design-A-Thon! Deadline: November 23rd, 2025",
+        redirect_to:
+            "https://forms.gle/W76JrGoH91rkSdVV9",
         redirecting_text: "Register Now",
     },
     {

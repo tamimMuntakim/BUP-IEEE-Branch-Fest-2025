@@ -51,7 +51,7 @@ const Competitions = () => {
             image: design_a_thon,
             description:
                 "The IEEE BranchFest 2025 “Design-A-Thon” is a UI/UX design competition organized by the IEEE BUP SB WIE Affinity Group. It challenges creative minds to analyze, design, and present innovative digital solutions to real-world problems, testing participants' creativity, empathy, and design thinking. The competition consists of two rounds: Online Qualifier (Critique & Redesign) and On-Site Final (5-Hour Design Challenge).",
-            registrationDeadline: "2025-11-18",
+            registrationDeadline: "2025-11-23",
             rulebookLink:
                 "https://drive.google.com/file/d/1Oc3lKiCEZPGir49zItxtaibR-MHQLip7/view?usp=sharing",
             registrationLink: "https://forms.gle/uh2Yfus7ipsH68GF9",
