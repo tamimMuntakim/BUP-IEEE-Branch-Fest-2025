@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import branch_fest_logo from "../assets/Logo/branch_fest_logo_transparent.png"
 
 // eslint-disable-next-line no-unused-vars
 
@@ -47,22 +48,26 @@ const Hero = () => {
                 <div className="absolute inset-0">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.1),transparent_70%)]"></div>
 
-                    <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] opacity-90"></div>
+                    <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] opacity-80"></div>
 
-                    <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] opacity-90"></div>
+                    <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] opacity-80"></div>
                 </div>
 
                 {/* Animated Title */}
-
-                <motion.h1
-                    initial={{ opacity: 0, y: -40 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                    viewport={{ once: true }}
-                    className="text-5xl sm:text-7xl md:text-8xl font-extrabold bg-clip-text text-transparent bg-linear-to-r/hsl from-sky-600 to-teal-400 text-center"
-                >
-                    IEEE BranchFest 2025
-                </motion.h1>
+                <div className="flex flex-col md:flex-row gap-4 items-center justify-center relative">
+                    <div className="relative">
+                        <img src={branch_fest_logo} alt="BranchFest Logo" className="w-[120px] sm:w-[200px] md:[250px] h-auto opacity-100 relative"/>
+                    </div>
+                    <motion.h1
+                        initial={{ opacity: 0, y: -40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="text-4xl sm:text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-linear-to-r/hsl from-sky-600 to-teal-400 text-center"
+                    >
+                        IEEE BranchFest 2025
+                    </motion.h1>
+                </div>
 
                 <p className="text-gray-200 text-xs md:text-sm text-center mb-6 mt-2">
                     Organized by{" "}
