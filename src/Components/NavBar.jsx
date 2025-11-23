@@ -79,7 +79,7 @@ const NavBar = () => {
                     </Link>
                 </div>
                 <div className="navbar-end">
-                    <div className="sm:gap-2 md:gap-3 flex">
+                    <div className="gap-1 sm:gap-2 md:gap-3 flex">
                         <Link
                             to="https://www.facebook.com/share/1779mJzeGn/"
                             target="_blank"
@@ -99,6 +99,12 @@ const NavBar = () => {
                             className="btn btn-accent btn-sm md:btn-md text-white hover:text-white hidden sm:flex"
                         >
                             <PiBookOpenTextBold  /> Blogs
+                        </Link>
+                        <Link
+                            to="/blogs"
+                            className="btn btn-xs btn-accent text-white hover:text-white sm:hidden"
+                        >
+                            <PiBookOpenTextBold  />
                         </Link>
                     </div>
                 </div>
