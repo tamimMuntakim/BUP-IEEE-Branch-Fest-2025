@@ -14,7 +14,7 @@ const NavBar = () => {
                         <div
                             tabIndex={0}
                             role="button"
-                            className="btn btn-ghost btn-circle btn-sm text-base lg:text-lg xl:text-2xl "
+                            className="btn btn-ghost btn-circle text-base lg:text-lg xl:text-2xl "
                         >
                             <MdOutlineMenuOpen className="font-extrabold text-teal-300"></MdOutlineMenuOpen>
                         </div>
