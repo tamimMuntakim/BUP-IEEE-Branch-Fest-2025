@@ -42,7 +42,7 @@ const BlogCard = ({ blog }) => {
                             // Bullet point detection
                             if (
                                 line.trim().startsWith("-") ||
-                                line.trim().startsWith("*") ||
+                                // line.trim().startsWith("*") ||
                                 line.trim().startsWith("•")
                             ) {
                                 return (

@@ -8,7 +8,7 @@ import ingenious_banner from "../assets/Logo/ingenious.jpeg";
 const BlogPage = () => {
     const blogs = [
         {
-            id: 2,
+            id: 1,
             title: "Radiant Pharmaceuticals Limited",
             image: radiant_banner,
             excerpt:
@@ -106,79 +106,88 @@ Strengths:
 - High trust among healthcare professionals
 `,
         },
-//         {
-//             id: 2,
-//             title: "Aqua Paints",
-//             image: aqua_paint_banner,
-//             excerpt:
-//                 "Aqua Paints, a legacy-driven and innovation-focused paint brand, continues to lead through quality, sustainability, and advanced manufacturing.",
-//             content: `
-// Aqua Paints is one of Bangladesh's leading paint and coating companies, known for combining legacy with innovation and high-quality, eco-friendly products.
-
-// About Aqua Paints:
-// Aqua Paints is a brand under Octagon Fibres & Chemicals, a major player in Bangladesh’s paints and specialty chemicals sector.
-// The company’s legacy traces back to Elite Paints, founded in 1952 by Serajuddin Ahmed.
-// The Aqua brand was later launched by the founding family to blend heritage with modern quality.
-// Their headquarters is in Gulshan, Dhaka, with a manufacturing facility in the Tongi Industrial Area.
+        {
+            id: 2,
+            title: "Aqua Paints",
+            image: aqua_paint_banner,
+            excerpt:
+                "Aqua Paints, a brand of Octagon Fibres and Chemicals Ltd., is a leading Bangladeshi producer recognized for its legacy, vertically integrated manufacturing, and commitment to world-class, climate-adapted paint solutions.",
+            content: `
+Octagon Fibres and Chemicals Ltd., also known as Aqua Paints, is a leading Bangladeshi producer of paints, coatings, and specialty chemicals. Its journey began with Late Serajuddin Ahmed, who founded “Kumir Marka Alkatra” in 1952 and later expanded into major business sectors. To meet the growing demand for industrial paints, his sons set up a state-of-the-art factory in Tongi, Gazipur and launched Aqua Paints in 2001. The brand is recognized for uncompromising quality, with raw materials sourced from Germany, France, Switzerland, and Vietnam. The company also produces essential intermediates through backward linkage including acrylic emulsions and alkyd resins.
 
 
-// Vision, Mission & Values:
-// Vision: To provide high-quality paint products at competitive prices.
-// Mission: Utilize legacy, human capital, and future-driven technologies to create world-class paints for Bangladesh.
-// Core Values:
-// - Accountability
-// - Excellence
-// - Innovation
-// - Collaboration
-// - Initiative
-// - Respect
-// - Integrity
+1. Vision, Mission & Values:
+- Mission: Using a rich family legacy born in paint, our mission is to use the experiences of the past, human capital of the present and technology of the future to create world class paint for Bangladesh and its people.
+
+- Vision : To be the trusted name in paint solutions where our legacy meets cutting-edge innovation, thereby ensuring quality, customer satisfaction, and sustainable practices. 
+
+- Core Values: Innovation, Accountability, Collaboration, Respect, Initiative, Excellence and Integrity. 
 
 
-// Why Choose Aqua Paints? (Unique Selling Points):
-// - High Performance: Premium Silk Emulsion and Outer Coat products offer excellent adhesion, coverage, and durability.
-// - Rich Color Range: Their “Colour Factory” provides over 1,000 shades with precise color-matching.
-// - Quality Ingredients: Uses top-grade raw materials like titanium dioxide and acrylic resins.
-// - Environment Friendly: Focused on low-VOC paints and sustainable production.
-// - Local Manufacturing: Produces key raw materials in-house, ensuring quality and cost control.
-// - Strong Customer Support: Known for project guidance, timely delivery, and responsive service.
+2. Why Choose Aqua Paints? 
+- It’s Proven to Look Better and Last Longer :- Test every formula to ensure top performance so Aqua Silk Premium Emulsion and Outer Coat deliver superior adhesion, hide and long-lasting protection. Both offer low odor, low voc durable finishes that keep your spaces looking beautiful.
+
+- High Performance :- Their paints undergo rigorous testing and their premium Silk Emulsion and Outer Coat ranges deliver superior adhesion, coverage and long-lasting durability.
+
+- Rich Color Range :- With their “Colour Factory” offering over 1,000 shades plus custom color matching, they ensure every project gets the perfect tone.
+
+- Quality Ingredients :- They use world-class raw materials, including high-grade titanium dioxide and advanced acrylic resins for consistent performance.
+
+- Environmental Responsibility :- They focus on low-VOC formulations and eco-friendly manufacturing to reduce environmental impact.
+
+- In-House Raw Material Production :- They produce key materials like acrylic resins locally which ensures stronger quality control and cost efficiency.
+
+- Customer Support :- They provide dedicated service for project guidance, timely delivery and effective problem resolution.
 
 
-// Leadership Team:
-// - Ramzul Seraj – Managing Director, chemical engineer trained in the UK; leads product development and quality.
-// - Shayaan Seraj – Director, drives brand modernization and innovation.
-// - S.M. Ahsanul Karim – Executive Director overseeing R&D, production, and their Colour Factory.
+3. Leadership Team:
+
+*Ramzul Seraj, Managing Director*
+- Ramzul Seraj, a Chemical Engineering graduate from the University of Birmingham with a Master’s from the University of Aston, is the visionary founder who established Aqua Paints in 2001. His strong leadership and dedication to product excellence have transformed the company into one of Bangladesh’s most trusted and advanced paint manufacturers.
+
+*Sajedur Seraj, Deputy Managing Director*
+- He plays a pivotal role in leading the family’s diversified businesses with a strong focus on innovation and operational excellence.
+
+*Shayaan Seraj, Director*
+- Shayaan Seraj, a University of Toronto graduate with global advertising experience at WPP, Interpublic, and Publicis, returned to Bangladesh to lead Strategy, Operations & Marketing at Aqua Paints. His award-winning leadership and modern brand vision are driving Aqua Paints and the Elite Group toward a more innovative, youth-driven future.
 
 
-// Innovation & Product Development:
-// Aqua Paints is vertically integrated, manufacturing both paints and core raw materials like resins.
-// Their paints are engineered for Bangladesh’s climate — heat, humidity, and salinity.
-// They emphasize eco-friendly formulations with low or zero VOC.
-// Digital innovations include:
-// - InstaColor tinting machines
-// - AI-based color recommendation tools
+4. Innovation & Product Development:
 
-// The company is also pursuing international certifications, such as SIRIM QAS International, to elevate global standards.
+Aqua Paints is not just a paint company — they are vertically integrated, meaning they manufacture both paints and critical raw materials (resins, chemical agents). 
 
+They are designing their products to be particularly resilient to tough environmental conditions (heat, humidity, salinity), making them very suited to the Bangladeshi climate. 
 
-// Social & Community Contributions:
-// Aqua Paints supports youth-led beautification initiatives.
-// They provide paints and umbrellas to volunteers working to transform vandalized public walls into art.
-// Their CSR efforts reflect their commitment to community development.
+For sustainability, they are scaling up eco-friendly formulations (low or zero-VOC). 
+
+They also use digital innovation: e.g., InstaColor tinting machines for quick color matching, and AI tools to recommend colors based on room lighting and user preferences. 
+
+Aqua is pursuing international certifications to elevate its quality standards, such as testing with SIRIM QAS International. 
 
 
-// Safety, Quality & Standards:
-// Aqua ensures safety through strict TDS guidelines for application, ventilation, and handling.
-// Their paints are free from added lead, mercury, arsenic, and chromium—making them safer and environmentally compliant.
+5. Social & Community Contributions:
+
+Aqua Paints supports youth-led initiatives: for example, they provided paints and umbrellas to young volunteers to help beautify public spaces by transforming vandalized walls through art. Aqua Paints recently unveiled a vibrant national-themed mural at the BFF House—featuring female, male, and youth players—beautifully finished with their premium outercoat Defender, in a ceremony graced by Hamza Chowdhury.
+
+This shows their commitment not only to business but also to community development and social responsibility. 
 
 
-// Future Outlook:
-// Aqua Paints plans to expand regionally using its technical capability and integrated manufacturing.
-// Climate-adapted coatings such as anti-saline and elastomeric roof coatings position them for growth.
-// They aim to capture markets in South Asia, the Middle East, and Africa.
-// With AI tools and digital design solutions, Aqua continues appealing to modern homeowners, designers, and architects.
-// `,
-//         },
+6. Safety, Quality & Standards
+
+In their technical data sheets (TDS), they emphasize guidelines for safe paint application, proper mixing, ventilation, and health precautions. 
+
+They also state that their paints are free from added lead, mercury, arsenic, and chromium, which is a strong plus for safety and environmental compliance. 
+
+
+7. Future Outlook
+
+- Aqua seems well-positioned to expand regionally, leveraging its technical depth, global partnerships, and integrated production. 
+
+- With climate-adapted coatings (e.g., anti-saline, rooftop elastomeric), they are targeting both local demand (houses, buildings in Bangladesh) and maintain export quality.  
+
+- Their focus on digital design tools, AI, and smart color experience could help them appeal to design-conscious homeowners and architects.
+`,
+        },
         {
             id: 3,
             title: "Ostad",
